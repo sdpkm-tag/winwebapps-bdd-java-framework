@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>groupId</groupId>
   <artifactId>winapps-bdd-java-framework</artifactId>
-  <version>0.0.2-SHANPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <name>WinAppps Test Framework</name>
   <description>Test Automation Framework for Multiple Windows Applications using WinAppDriver</description>
   <organization>
@@ -201,7 +201,7 @@
         <artifactId>maven-release-plugin</artifactId>
         <version>${maven-release-plugin.version}</version>
         <configuration>
-          <goals>pre-integration-test</goals>
+          <goals>install</goals>
           <preparationGoals>package</preparationGoals>
           <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
           <tagNameFormat>v_@{project.version}</tagNameFormat>
