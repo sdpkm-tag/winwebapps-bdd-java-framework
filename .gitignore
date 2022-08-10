@@ -1,0 +1,10 @@
+*.idea
+/target
+.classpath
+.project
+.settings
+/bin/
+*/.DS_Store
+/test-output/screen-recordings/*
+/driver
+#/src/test/resources/runtimecache/*
