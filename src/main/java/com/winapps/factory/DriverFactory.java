@@ -74,17 +74,16 @@ public class DriverFactory {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        winApp.manage().timeouts().implicitlyWait(Long.parseLong(prop.getProperty("implicit_wait_time")),TimeUnit.MILLISECONDS);
+        winApp.manage().timeouts().implicitlyWait(Long.parseLong(prop.getProperty("implicit_wait_time")), TimeUnit.MILLISECONDS);
         winApp.manage().window().maximize();
         return winApp;
     }
 
     public void closeWinAppDriver() throws IOException, InterruptedException {
         //TODO Write code for closing winAppDriver and call this method to be used in hooks to run as teardown after all tests are run for winapps
-        Thread.sleep(Long.parseLong(prop.getProperty("wad_closedown_wait"))); // Make it configurable, if needed
+        Thread.sleep(Long.parseLong(prop.getProperty("wad_closedown_wait"))); // Configurable static wait time
         Runtime.getRuntime().exec("taskkill /F /IM WinAppDriver.exe");
         System.out.println("\nWindows Application Driver has shut down");
-
     }
 
     public void cleanWadLogFile() throws InterruptedException {
@@ -95,25 +94,30 @@ public class DriverFactory {
         System.out.println("WindowsApplication Log file is available");
     }
 
-    public WebDriver startWebDriver(String browserName) {
+    public WebDriver startWebBrowserDriver(String browserName) {
         //TODO Following code might need impacting and tweaking against version of browsers available on test machine. Change could be to use local drivers set-up (example shown commented out below)
 
         System.out.println("Selected browser is: " + browserName);
         if (browserName.equals("chrome")) {
             WebDriverManager.chromedriver().setup();
-            threadLocal.set(new ChromeDriver());
+            webApp = new ChromeDriver();
+//            threadLocal.set(new ChromeDriver());
         } else if (browserName.equals("firefox")) {
             WebDriverManager.firefoxdriver().setup();
-            threadLocal.set(new FirefoxDriver());
+            webApp = new FirefoxDriver();
+//            threadLocal.set(new FirefoxDriver());
         } else if (browserName.equals("internetexplorer")) {
             WebDriverManager.iedriver().setup();
-            threadLocal.set(new InternetExplorerDriver());
+            webApp = new InternetExplorerDriver();
+//            threadLocal.set(new InternetExplorerDriver());
         } else if (browserName.equals("opera")) {
             WebDriverManager.operadriver().setup();
-            threadLocal.set(new OperaDriver());
+            webApp = new OperaDriver();
+//            threadLocal.set(new OperaDriver());
         } else if (browserName.equals("edge")) {
             WebDriverManager.edgedriver().setup();
-            threadLocal.set(new EdgeDriver());
+            webApp = new EdgeDriver();
+//            threadLocal.set(new EdgeDriver());
         } else {
             System.out.println("Please pass the correct browser value. " + browserName + " is not correct value chosen or configured.");
         }
@@ -130,21 +134,17 @@ public class DriverFactory {
 //            System.out.println("Please pass the correct browser value. " + browserName + " is not correct value chosen or configured.");
 //        }
 
-        getWebDriver().manage().deleteAllCookies();
-        getWebDriver().manage().window().maximize();
-        return getWebDriver();
+//        getWebDriver().manage().deleteAllCookies();
+//        getWebDriver().manage().window().maximize();
+//        return getWebDriver();
+        webApp.manage().deleteAllCookies();
+        webApp.manage().window().maximize();
+        return webApp;
     }
 
     public static synchronized WebDriver getWebDriver() {
         //TODO Following code might need impacting and tweaking against version of browsers available on test machine
         return threadLocal.get();
-    }
-
-    public void launchWebBrowser() {
-        // FIXME to be correctly implemented when webbrowser session is to be launched in the same session of scenario running steps with Window Applications first.
-        String browserName = prop.getProperty("browser");
-        DriverFactory driverFactory = new DriverFactory();
-        driverFactory.startWebDriver(browserName);
     }
 
 }

@@ -6,6 +6,7 @@ import com.winapps.utils.ScreenRecorderUtil;
 import io.cucumber.java.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -13,24 +14,28 @@ import java.util.Properties;
 
 public class ApplicationHooks {
 
-    private static final DriverFactory driverFactory = new DriverFactory();
+    //    private static final DriverFactory driverFactory = new DriverFactory();
     private static final ConfigFileReader cfgReader = new ConfigFileReader();
     private static final Properties prop = cfgReader.readProperty();
     private static final String screenRecordingEnabled = prop.getProperty("screen_recording_enabled");
     private static final String screenRecordingFilenamePrefix = prop.getProperty("screen_recording_filename_prefix");
 
+    private WebDriver webApp;
+    private static DriverFactory driverFactory;
+
     @BeforeAll()
     public static void startWinAppDriverProcess() throws Exception {
+        driverFactory = new DriverFactory();
         driverFactory.startWinAppDriver();
-            if (screenRecordingEnabled.equalsIgnoreCase("true")) {
-                ScreenRecorderUtil.startRecording(screenRecordingFilenamePrefix);
-                System.out.println("Screen recording of test is enabled.");
-            } else {
-                System.out.println("Screen recording of test is disabled.");
-            }
+        if (screenRecordingEnabled.equalsIgnoreCase("true")) {
+            ScreenRecorderUtil.startRecording(screenRecordingFilenamePrefix);
+            System.out.println("Screen recording of test is enabled.");
+        } else {
+            System.out.println("Screen recording of test is disabled.");
         }
+    }
 
-    // Example calling methods for each of the WinApps (Recommended to use Feature level tags so that application will always be launched using the specific @Before hook
+    // Example calling methods for each of the WinApps (Recommended to use Feature level tags so that application will always be launched using the specific @Before hooks
 
     @Before("@Calculator")
     public void startCalculatorApp() {
@@ -50,7 +55,9 @@ public class ApplicationHooks {
         System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----- Notepad Application has launched! ----->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
     }
 
-    @After(order = 0)
+    //
+//    @After(order = 0)
+    @After(value = "@winapps", order = 0)
     public void closeWinAppSession() throws InterruptedException {
         Thread.sleep(2000); // Allow some static wait (can be made configurable
         DriverFactory.winApp.quit();
@@ -62,8 +69,11 @@ public class ApplicationHooks {
         if (scenario.isFailed()) {
             // take screenshot (Can be customised to take screenshots at all steps)
             String screenshotName = scenario.getName().replaceAll(" ", "_");
-            byte[] sourcePath = ((TakesScreenshot) DriverFactory.winApp).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(sourcePath, "image/png", screenshotName);
+
+                byte[] sourcePath = ((TakesScreenshot) DriverFactory.winApp).getScreenshotAs(OutputType.BYTES);
+                scenario.attach(sourcePath, "image/png", screenshotName);
+
+
         }
     }
 
@@ -82,8 +92,22 @@ public class ApplicationHooks {
         driverFactory.cleanWadLogFile();
     }
 
-    public void startWebBrowser() {
+    @Before("@webapp")
+    public void launchWebBrowser() {
 //TODO when transition from WinApp to WebApp version of same application is to be covered in the same test scenario. This can also be placed in DriverFactory class.
+        // FIXME to be correctly implemented when webbrowser session is to be launched in the same session of scenario running steps with Window Applications first.
+        String browserName = prop.getProperty("browser");
+        webApp = driverFactory.startWebBrowserDriver(browserName);
+//        DriverFactory driverFactory = new DriverFactory();
+//        driverFactory.startWebBrowserDriver(browserName);
     }
 
+    @After(value = "@webapp", order = 0)
+    public void closeWebBrowser() {
+        // FIXME to be correctly implemented when webbrowser session is to be launched in the same session of scenario running steps with Window Applications first.
+        DriverFactory.webApp.quit();
+
+    }
 }
+
+
