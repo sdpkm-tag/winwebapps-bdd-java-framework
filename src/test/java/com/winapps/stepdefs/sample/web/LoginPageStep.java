@@ -2,6 +2,7 @@ package com.winapps.stepdefs.sample.web;
 
 import com.winapps.factory.DriverFactory;
 import com.winapps.pageobjects.sample.web.LoginPage;
+import com.winapps.utils.ConfigFileReader;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -14,9 +15,7 @@ public class LoginPageStep {
 
     @Given("user is on login page")
     public void user_is_on_login_page() {
-
-//        DriverFactory.winApp.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
-       DriverFactory.webApp.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
+       DriverFactory.webApp.get(ConfigFileReader.properties.getProperty("sample_web_app"));
     }
 
     @When("user gets the title of the page")

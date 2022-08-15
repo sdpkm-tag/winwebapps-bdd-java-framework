@@ -7,11 +7,12 @@ import java.util.Properties;
 
 public class ConfigFileReader {
 
-    private Properties properties;
+    public static Properties properties;
     private static final String CONFIG_FILE_PATH = "./src/test/resources/config/config.properties";
 
     /**
      * This method is used to load the properties form "config.properties" file.
+     *
      * @return It returns properties object to the caller.
      */
     public Properties readProperty() {

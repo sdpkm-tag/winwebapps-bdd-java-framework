@@ -25,10 +25,11 @@ Framework elemts:
 4. Cache data / runtime read write into a text file (small runtime test data utility - recommended to use if data passing required within the same test scenario)
 5. Supports multiple win apps and web apps (Single framework to have package of all WinApps and associated WebApps - organised via packaging structure as shown for sample apps)
 6. Test Reporting (Currently has cucumber basic html, cluecumber report, extent-spark, extent-html and extent-pdf reports enabled)
-7. Launches Web browser (Can lauch different web browsers using DriverFactory class)
+7. Launches Web browser (Can lauch different web browsers using DriverFactory class) using configuration
 8. Add dynamic waiting (Explicit, implict and local) - (Can be hardcoded to start with but later to be configured to be read from config file using explicit or fluent waits)
-9. Parallel runs - Using Threadlocal for any parallel test needs (Has capability to extend the framework for parallel runs using multi-threading)
-10. Distributed Runs - can be extended to set-up to run with node/server server struture (Using of selenium grid, WD hub etc)
+9. Parallel runs (Future Development) - Using Threadlocal for any parallel test needs (Has capability to extend the framework for parallel runs using multi-threading)
+10. Distributed Runs (Future Development)- can be extended to set-up to run with node/server struture (Using of selenium grid, WD hub etc)
+11. Has logging capability using Apache Log4j2 api
 
 Running Cucumber Tests from Maven
 
@@ -62,6 +63,7 @@ Run following command to check on versions for dependencies and plugins:
 
 >- Additional Configuration help for cluecumber report - https://github.com/trivago/cluecumber-report-plugin
 >- Additional documentation for WebDriverManager - https://bonigarcia.dev/webdrivermanager/
+>- Additional documentation for Extent Report adapter (Cucumber JVM 7) - https://ghchirp.online/3196/
 
 Pre-requisites: 
 
