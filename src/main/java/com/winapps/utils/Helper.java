@@ -11,11 +11,13 @@ import java.time.LocalDate;
 import java.util.Date;
 import java.util.Random;
 
+import static com.winapps.utils.ConfigFileReader.properties;
+
 public class Helper {
 
     //public static String currentSite;
     static String absPath = new File("").getAbsolutePath().toString();
-    static String filePath = absPath + "/src/test/resources/runtimecache/";
+    static String filePath = absPath + properties.getProperty("text_file_dir_path");
 
     // Save data in a text file - Cache
     public static void saveDataInATextFile(String id, String fileName) throws Throwable {
@@ -34,7 +36,7 @@ public class Helper {
     }
 
     // Fetch saved data from the text file
-    public static String getDateFromSavedTextFile(String fileName) throws Throwable {
+    public static String getDataFromSavedTextFile(String fileName) throws Throwable {
         BufferedReader br = new BufferedReader(new FileReader(filePath.concat(fileName)));
         try {
             StringBuilder sb = new StringBuilder();
@@ -136,7 +138,7 @@ public class Helper {
         return randomNino;
     }
 
-    // Below only used for testing the various methods in above code
+    // Below only used for testing the various methods in above code and can be referred as example
     // FIXME Remove this code once ready for implementation in final framework
     public static void main(String[] args) throws Throwable {
         Helper helper = new Helper();
@@ -147,7 +149,8 @@ public class Helper {
         saveDataInATextFile("test", "testfile.txt");
         saveDataInATextFile("testnew", "testfile.txt");
         saveDataInATextFile("newtest", "testfile.txt");
-        System.out.println("Data saved in text file is: " + getDateFromSavedTextFile("testfile.txt"));
+        saveDataInATextFile("calcresult", "calcresult.txt");
+        System.out.println("Data saved in text file is: " + getDataFromSavedTextFile("testfile.txt"));
         System.out.println(helper.getDateInSpecificFormat("yyyyMMdd-HHmmss"));
 
     }

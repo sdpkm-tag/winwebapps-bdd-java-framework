@@ -78,15 +78,20 @@ font-src * data: blob: 'unsafe-inline';"/>
   "data": {
     "labels": [
       "com.winapps.apphooks.ApplicationHooks.logScenarioStart(io.cucumber.java.Scenario)",
+      "com.winapps.apphooks.ApplicationHooks.launchWebBrowser(io.cucumber.java.Scenario)",
       "com.winapps.apphooks.ApplicationHooks.startCalculatorApp(io.cucumber.java.Scenario)",
       "I am on standard calculator screen",
-      "I keyed \"56523\" into the calculator",
-      "I clicked on \"x\" button",
-      "I keyed \"876.59\" into the calculator",
+      "I clicked \"4\" into the calculator",
+      "I clicked on \"+\" button",
+      "I clicked \"3\" into the calculator",
       "I clicked on \"\u003d\" button",
-      "\"49,547,496.57\" should be displayed on the result screen",
+      "\"7\" should be displayed on the result screen",
+      "I note down result and close Windows Calculator App and Open WebApp",
+      "I did a sum \"+\" operation of \"4\" and \"3\" and clicked on \"\u003d\" button",
+      "I get \"9\" as result and this is same as result shown by Windows calculator App",
       "com.winapps.apphooks.ApplicationHooks.screenshotOnFailure(io.cucumber.java.Scenario)",
       "com.winapps.apphooks.ApplicationHooks.closeWinAppSession(io.cucumber.java.Scenario)",
+      "com.winapps.apphooks.ApplicationHooks.closeWebBrowser(io.cucumber.java.Scenario)",
       "com.winapps.apphooks.ApplicationHooks.logScenarioEndAndStatus(io.cucumber.java.Scenario)"
     ],
     "datasets": [
@@ -94,17 +99,27 @@ font-src * data: blob: 'unsafe-inline';"/>
         "data": [
           0,
           0,
+          0,
           5,
-          1,
-          2,
-          1,
-          2,
+          0,
           2,
           0,
+          2,
+          2,
+          6,
+          8,
+          0,
+          0,
+          2,
           2,
           0
         ],
         "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
@@ -132,9 +147,19 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
@@ -162,9 +187,19 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
@@ -203,7 +238,7 @@ font-src * data: blob: 'unsafe-inline';"/>
         {
           "ticks": {
             "min": 0,
-            "stepSize": 5,
+            "stepSize": 8,
             "display": true
           },
           "stacked": true,
@@ -313,10 +348,10 @@ font-src * data: blob: 'unsafe-inline';"/>
         <div class="cluecumber-template">
             <div class="pb-2 mt-4 mb-2 border-bottom">
                     <h5>
-                            <a href="pages/feature-scenarios/feature_0.html">This is to test calculation feature of the Windows Calculator App</a>
-                        <span class="small">file:src/test/resources/features/sample/calculator/standardcalculator.feature</span>
+                            <a href="pages/feature-scenarios/feature_3.html">This is to test calculation feature of the Windows Calculator App and verifying the result in a web app</a>
+                        <span class="small">file:src/test/resources/features/sample/winweb/wintoweb.feature</span>
                     </h5>
-                    <h3>Multiplication of two numbers</h3>
+                    <h3>Addition of two numbers - To test failure on web</h3>
             </div>
 
 
@@ -335,15 +370,19 @@ font-src * data: blob: 'unsafe-inline';"/>
         <div class="card h-100">
                 <div class="card-header">Scenario Info</div>
             <div class="card-body">
-                <li class="list-group-item">Started on:<br>2022-08-16 13:10:06</li>
-                <li class="list-group-item">Ended on:<br>2022-08-16 13:10:24</li>
-            <li class="list-group-item">Test Runtime:<br>0m 18s 092ms</li>
+                <li class="list-group-item">Started on:<br>2022-08-16 13:11:31</li>
+                <li class="list-group-item">Ended on:<br>2022-08-16 13:12:04</li>
+            <li class="list-group-item">Test Runtime:<br>0m 33s 703ms</li>
             <li class="list-group-item">
                     <a href="pages/tag-scenarios/tag_WinApp.html">@WinApp</a>,
 
+                    <a href="pages/tag-scenarios/tag_WebApp.html">@WebApp</a>,
+
                     <a href="pages/tag-scenarios/tag_Calculator.html">@Calculator</a>,
 
-                    <a href="pages/tag-scenarios/tag_multiply.html">@multiply</a>            </li>
+                    <a href="pages/tag-scenarios/tag_addwinweb.html">@addwinweb</a>,
+
+                    <a href="pages/tag-scenarios/tag_madetofail.html">@madetofail</a>            </li>
             </div>
         </div>
     </div>
@@ -353,15 +392,15 @@ font-src * data: blob: 'unsafe-inline';"/>
             <div class="card-body">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                    6         Steps
+                    9         Steps
 
                 </li>
                 <li class="list-group-item">
-                    6 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+                    8 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
        title="passed"><span style="display:none">passed</span></i>
 
                     <br>
-                    0 failed     <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
+                    1 failed     <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
        title="failed"><span style="display:none">failed</span></i>
 
                     <br>
@@ -370,6 +409,10 @@ font-src * data: blob: 'unsafe-inline';"/>
 
                 </li>
             </ul>
+                <button class="btn btn-outline-secondary btn-block collapsed" type="button" data-toggle="collapse"
+                        aria-expanded="true" data-cluecumber-item="before-after-hooks-button"
+                        data-target=".scenarioHook">Scenario Hooks with content
+                </button>
             </div>
         </div>
     </div>
@@ -394,7 +437,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 05s 037ms
+                                0m 05s 032ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -409,11 +452,11 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <span class="text-left">2.</span>
                                 <span data-toggle="tooltip" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String)">
                                     <a href="pages/step-scenarios/step_1201610750.html"><span
-                                                class="keyword">When </span> I keyed <span class="parameter">"56523"</span> into the calculator</a>
+                                                class="keyword">When </span> I clicked <span class="parameter">"4"</span> into the calculator</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 01s 434ms
+                                0m 00s 301ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -428,11 +471,11 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <span class="text-left">3.</span>
                                 <span data-toggle="tooltip" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String)">
                                     <a href="pages/step-scenarios/step_372941348.html"><span
-                                                class="keyword">And </span> I clicked on <span class="parameter">"x"</span> button</a>
+                                                class="keyword">And </span> I clicked on <span class="parameter">"+"</span> button</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 02s 291ms
+                                0m 02s 285ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -447,11 +490,11 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <span class="text-left">4.</span>
                                 <span data-toggle="tooltip" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String)">
                                     <a href="pages/step-scenarios/step_1201610750.html"><span
-                                                class="keyword">And </span> I keyed <span class="parameter">"876.59"</span> into the calculator</a>
+                                                class="keyword">And </span> I clicked <span class="parameter">"3"</span> into the calculator</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 01s 735ms
+                                0m 00s 299ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -470,7 +513,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 02s 319ms
+                                0m 02s 295ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -485,11 +528,11 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <span class="text-left">6.</span>
                                 <span data-toggle="tooltip" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(java.lang.String)">
                                     <a href="pages/step-scenarios/step_264718150.html"><span
-                                                class="keyword">Then </span> <span class="parameter">"49,547,496.57"</span> should be displayed on the result screen</a>
+                                                class="keyword">Then </span> <span class="parameter">"7"</span> should be displayed on the result screen</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 02s 278ms
+                                0m 02s 293ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -497,11 +540,117 @@ font-src * data: blob: 'unsafe-inline';"/>
                             </div>
 
                         </div>
+
+
+                        <div class="row row_passed table-row-passed">
+                            <div class="col-9 text-left">
+                                <span class="text-left">7.</span>
+                                <span data-toggle="tooltip" title="com.winapps.stepdefs.sample.winweb.OnlineBasicCalcStepDef.i_note_down_result_and_close_windows_calculator_app_and_open_web_app()">
+                                    <a href="pages/step-scenarios/step_0933411287.html"><span
+                                                class="keyword">And </span> I note down result and close Windows Calculator App and Open WebApp</a>
+                                </span>
+                            </div>
+                            <div class="col-2 text-left small">
+                                0m 06s 678ms
+                            </div>
+                            <div class="col-1 text-right">
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row row_passed table-row-passed">
+                            <div class="col-9 text-left">
+                                <span class="text-left">8.</span>
+                                <span data-toggle="tooltip" title="com.winapps.stepdefs.sample.winweb.OnlineBasicCalcStepDef.i_did_a_sum_operation_of_and_and_clicked_on_button(java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                                    <a href="pages/step-scenarios/step_439737622.html"><span
+                                                class="keyword">When </span> I did a sum <span class="parameter">"+"</span> operation of <span class="parameter">"4"</span> and <span class="parameter">"3"</span> and clicked on <span class="parameter">"="</span> button</a>
+                                </span>
+                            </div>
+                            <div class="col-2 text-left small">
+                                0m 08s 248ms
+                            </div>
+                            <div class="col-1 text-right">
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row row_failed table-row-failed">
+                            <div class="col-9 text-left">
+                                <span class="text-left">9.</span>
+                                <span data-toggle="tooltip" title="com.winapps.stepdefs.sample.winweb.OnlineBasicCalcStepDef.i_get_as_result_and_this_is_same_as_result_shown_by_windows_calculator_app(java.lang.String)">
+                                    <a href="pages/step-scenarios/step_1652612995.html"><span
+                                                class="keyword">Then </span> I get <span class="parameter">"9"</span> as result and this is same as result shown by Windows calculator App</a>
+                                </span>
+                            </div>
+                            <div class="col-2 text-left small">
+                                0m 00s 019ms
+                            </div>
+                            <div class="col-1 text-right">
+    <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
+       title="failed"><span style="display:none">failed</span></i>
+                            </div>
+
+        <div class="row w-100 p-3 m-0 scenarioErrorMessage">
+            <div class="w-100 text-left border border-danger">
+                <pre class="text-danger small p-2">org.junit.ComparisonFailure: Actual displayed value on web didn't match with expected value! expected:&#60;Display is [9]&#62; but was:&#60;Display is [7]&#62;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at com.winapps.stepdefs.sample.winweb.OnlineBasicCalcStepDef.i_get_as_result_and_this_is_same_as_result_shown_by_windows_calculator_app(OnlineBasicCalcStepDef.java:44)
+	at &#226;&#339;&#189;.I get &#34;9&#34; as result and this is same as result shown by Windows calculator App(<a href='file:///D:/myProjects/winapps-bdd-java-framework/src/test/resources/features/sample/winweb/wintoweb.feature:27)' target='_blank'>file:///D:/myProjects/winapps-bdd-java-framework/src/test/resources/features/sample/winweb/wintoweb.feature:27)</a>
+</pre>
+            </div>
+        </div>
+                        </div>
                 </li>
             </div>
         </div>
     </div>
 
+            <div class="scenarioHook collapse">
+    <div class="col-sm-12  h-auto" data-cluecumber-item="card">
+        <div class="card h-100">
+                <div class="card-header">After Hooks</div>
+            <div class="card-body">
+                    <li class="list-group-item">
+                                <div class="row row_passed table-row-passed">
+                                    <div class="col-9 text-left">
+                                        <span class="text-left">1.</span>
+                                        <i>com.winapps.apphooks.ApplicationHooks.screenshotOnFailure(io.cucumber.java.Scenario)</i>
+                                    </div>
+                                    <div class="col-2 text-left small">
+                                        0m 00s 286ms
+                                    </div>
+                                    <div class="col-1 text-right">
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
+                                    </div>
+            <div class="row w-100 p-3 m-0 scenarioAttachment">
+                <div class="w-100 p-1 m-0 border-bottom small text-left">
+                    <a class="btn-link" data-toggle="collapse" href="#expandable978799163" role="button"
+                       aria-expanded="false" aria-controls="expandable978799163">Toggle</a> |
+                        Addition_of_two_numbers_-_To_test_failure_on_web (PNG attachment)
+                </div>
+                <div class="w-100 text-left m-auto">
+                    <div class="w-100 text-left m-auto collapse show" id="expandable978799163">
+                            <a class="grouped_elements" rel="images" href="attachments/attachment004.png">
+                                <img src="attachments/attachment004.png" class="embedded-image"
+                                     style="max-width: 50%;"
+                                     alt="Attachment attachment004.png"/>
+                            </a>
+                    </div>
+                </div>
+            </div>
+                                </div>
+                    </li>
+            </div>
+        </div>
+    </div>
+            </div>
     </ul>
         </div>
     </main>

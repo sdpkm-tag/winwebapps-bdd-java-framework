@@ -50,7 +50,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Aug 15, 2022 05:11:19 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Aug 16, 2022 01:08:44 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -78,18 +78,20 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@WinApp</a></li>
-					<li><a href='#'>@WebApp</a></li>
-					<li><a href='#'>@Notepad</a></li>
-					<li><a href='#'>@smoke</a></li>
-					<li><a href='#'>@Smoke</a></li>
-					<li><a href='#'>@Calculator</a></li>
-					<li><a href='#'>@multiple</a></li>
-					<li><a href='#'>@regression</a></li>
-					<li><a href='#'>@multiply</a></li>
-					<li><a href='#'>@subtract</a></li>
 					<li><a href='#'>@add</a></li>
+					<li><a href='#'>@WebApp</a></li>
+					<li><a href='#'>@WinApp</a></li>
+					<li><a href='#'>@regression</a></li>
+					<li><a href='#'>@addwinweb</a></li>
+					<li><a href='#'>@smoke</a></li>
+					<li><a href='#'>@Calculator</a></li>
+					<li><a href='#'>@subtract</a></li>
+					<li><a href='#'>@Notepad</a></li>
 					<li><a href='#'>@divide</a></li>
+					<li><a href='#'>@madetopass</a></li>
+					<li><a href='#'>@madetofail</a></li>
+					<li><a href='#'>@multiply</a></li>
+					<li><a href='#'>@multiple</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -131,12 +133,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$33%'>
+                    <span class='tooltipped' data-position='top' data-tooltip='$25%'>
                     <span class='strong'>1</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='66%'>
-                    2</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='75%'>
+                    3</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -149,12 +151,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='83%'>
-                    <span class='strong'>10</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='69%'>
+                    <span class='strong'>9</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='16%'>
-                    2</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='30%'>
+                    4</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -169,12 +171,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='96%'>
-                    <span class='strong'>61</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='94%'>
+                    <span class='strong'>73</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='3%'>
-                    2</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='5%'>
+                    4</span> steps failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -200,7 +202,7 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>This is to test calculation feature of the Windows Calculator App</span>
-						<span class='test-time'>Aug 15, 2022 05:11:23 pm</span>
+						<span class='test-time'>Aug 16, 2022 01:08:47 pm</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -214,7 +216,7 @@
 
 <div class='scenario outline node' test-id='2' status='fail'>
 
-	<span class='duration right label'>00 00 56.429</span>
+	<span class='duration right label'>00 00 48.098</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Basic test of "<operation>" operation using data table</div>
 	</div>
@@ -240,29 +242,29 @@
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='5' class='gc given Pass' status='Pass'>
+				<li test-id='6' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I have keyed "20" into the calculator</h6>
 
 				</li>
-				<li test-id='6' class='gc and Pass' status='Pass'>
+				<li test-id='7' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I have clicked on "+" button</h6>
 
 				</li>
-				<li test-id='7' class='gc and Pass' status='Pass'>
+				<li test-id='8' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I have keyed "30" into the calculator</h6>
 
 				</li>
-				<li test-id='8' class='gc when Pass' status='Pass'>
+				<li test-id='9' class='gc when Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I press on "=" button to get the calculation result</h6>
 
 				</li>
-				<li test-id='9' class='gc then Pass' status='Pass'>
+				<li test-id='10' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then "50" should be displayed on the result screen</h6>
 
 				</li>
 			</ul>
 		</li>
-		<li test-id='12' class='node scenario Fail' status='Fail'>
+		<li test-id='14' class='node scenario Fail' status='Fail'>
 			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Basic test of "x" operation using data table</div>
 
 				<div class='category-list'>
@@ -273,33 +275,33 @@
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='14' class='gc given Pass' status='Pass'>
+				<li test-id='17' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I have keyed "2" into the calculator</h6>
 
 				</li>
-				<li test-id='15' class='gc and Pass' status='Pass'>
+				<li test-id='18' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I have clicked on "x" button</h6>
 
 				</li>
-				<li test-id='16' class='gc and Pass' status='Pass'>
+				<li test-id='19' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I have keyed "5" into the calculator</h6>
 
 				</li>
-				<li test-id='17' class='gc when Pass' status='Pass'>
+				<li test-id='20' class='gc when Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I press on "=" button to get the calculation result</h6>
 
 				</li>
-				<li test-id='18' class='gc then Fail' status='Fail'>
+				<li test-id='21' class='gc then Fail' status='Fail'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then "7" should be displayed on the result screen</h6>
 
 							<textarea disabled class="code-block">java.lang.AssertionError: Values don't match: Expected value of element is 'Display is 7' but actual value of element is 'Display is 10'
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)
-	at com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(StandardCalcStepDefinitions.java:63)
+	at com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(StandardCalcStepDefinitions.java:67)
 	at ?."7" should be displayed on the result screen(file:///D:/myProjects/winapps-bdd-java-framework/src/test/resources/features/sample/calculator/standardcalculator.feature:11)
 </textarea>
 				</li>
-				<li test-id='19' class='gc * Pass' status='Pass'>
+				<li test-id='22' class='gc * Pass' status='Pass'>
 					<h6 class="step-name" title="AFTER"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.winapps.apphooks.ApplicationHooks.screenshotOnFailure(io.cucumber.java.Scenario)</h6>
 
 							<div class="node-step">Basic_test_of_"x"_operation_using_data_table</div>
@@ -309,7 +311,7 @@
 				</li>
 			</ul>
 		</li>
-		<li test-id='21' class='node scenario Pass' status='Pass'>
+		<li test-id='25' class='node scenario Pass' status='Pass'>
 			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Basic test of "÷" operation using data table</div>
 
 				<div class='category-list'>
@@ -320,29 +322,29 @@
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='23' class='gc given Pass' status='Pass'>
+				<li test-id='28' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I have keyed "100" into the calculator</h6>
 
 				</li>
-				<li test-id='24' class='gc and Pass' status='Pass'>
+				<li test-id='29' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I have clicked on "÷" button</h6>
 
 				</li>
-				<li test-id='25' class='gc and Pass' status='Pass'>
+				<li test-id='30' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I have keyed "40" into the calculator</h6>
 
 				</li>
-				<li test-id='26' class='gc when Pass' status='Pass'>
+				<li test-id='31' class='gc when Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I press on "=" button to get the calculation result</h6>
 
 				</li>
-				<li test-id='27' class='gc then Pass' status='Pass'>
+				<li test-id='32' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then "2.5" should be displayed on the result screen</h6>
 
 				</li>
 			</ul>
 		</li>
-		<li test-id='30' class='node scenario Pass' status='Pass'>
+		<li test-id='36' class='node scenario Pass' status='Pass'>
 			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Basic test of "-" operation using data table</div>
 
 				<div class='category-list'>
@@ -353,23 +355,23 @@
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='32' class='gc given Pass' status='Pass'>
+				<li test-id='39' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I have keyed "675.86" into the calculator</h6>
 
 				</li>
-				<li test-id='33' class='gc and Pass' status='Pass'>
+				<li test-id='40' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I have clicked on "-" button</h6>
 
 				</li>
-				<li test-id='34' class='gc and Pass' status='Pass'>
+				<li test-id='41' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I have keyed "46.897" into the calculator</h6>
 
 				</li>
-				<li test-id='35' class='gc when Pass' status='Pass'>
+				<li test-id='42' class='gc when Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I press on "=" button to get the calculation result</h6>
 
 				</li>
-				<li test-id='36' class='gc then Pass' status='Pass'>
+				<li test-id='43' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then "628.963" should be displayed on the result screen</h6>
 
 				</li>
@@ -377,9 +379,9 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='39' status='pass'>
+<div class='scenario node' test-id='47' status='pass'>
 
-	<span class='duration right label'>00 00 17.492</span>
+	<span class='duration right label'>00 00 15.506</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Division of two numbers</div>
 	</div>
@@ -392,41 +394,41 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='41' class='node given Pass' status='Pass'>
+		<li test-id='50' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_am_on_standard_calculator_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am on standard calculator screen</div>
 
 
 		</li>
-		<li test-id='42' class='node when Pass' status='Pass'>
+		<li test-id='51' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I clicked "3" into the calculator</div>
 
 
 		</li>
-		<li test-id='43' class='node and Pass' status='Pass'>
+		<li test-id='52' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I clicked on "÷" button</div>
 
 
 		</li>
-		<li test-id='44' class='node and Pass' status='Pass'>
+		<li test-id='53' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I clicked "2" into the calculator</div>
 
 
 		</li>
-		<li test-id='45' class='node and Pass' status='Pass'>
+		<li test-id='54' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I clicked on "=" button</div>
 
 
 		</li>
-		<li test-id='46' class='node then Pass' status='Pass'>
+		<li test-id='55' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then "1.5" should be displayed on the result screen</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='49' status='pass'>
+<div class='scenario node' test-id='59' status='pass'>
 
-	<span class='duration right label'>00 00 17.504</span>
+	<span class='duration right label'>00 00 15.504</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Addition of two numbers</div>
 	</div>
@@ -440,41 +442,41 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='51' class='node given Pass' status='Pass'>
+		<li test-id='62' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_am_on_standard_calculator_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am on standard calculator screen</div>
 
 
 		</li>
-		<li test-id='52' class='node when Pass' status='Pass'>
+		<li test-id='63' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I clicked "3" into the calculator</div>
 
 
 		</li>
-		<li test-id='53' class='node and Pass' status='Pass'>
+		<li test-id='64' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I clicked on "+" button</div>
 
 
 		</li>
-		<li test-id='54' class='node and Pass' status='Pass'>
+		<li test-id='65' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I clicked "9" into the calculator</div>
 
 
 		</li>
-		<li test-id='55' class='node and Pass' status='Pass'>
+		<li test-id='66' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I clicked on "=" button</div>
 
 
 		</li>
-		<li test-id='56' class='node then Pass' status='Pass'>
+		<li test-id='67' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then "12" should be displayed on the result screen</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='59' status='pass'>
+<div class='scenario node' test-id='71' status='pass'>
 
-	<span class='duration right label'>00 00 20.074</span>
+	<span class='duration right label'>00 00 18.097</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Multiplication of two numbers</div>
 	</div>
@@ -487,41 +489,41 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='61' class='node given Pass' status='Pass'>
+		<li test-id='74' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_am_on_standard_calculator_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am on standard calculator screen</div>
 
 
 		</li>
-		<li test-id='62' class='node when Pass' status='Pass'>
+		<li test-id='75' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I keyed "56523" into the calculator</div>
 
 
 		</li>
-		<li test-id='63' class='node and Pass' status='Pass'>
+		<li test-id='76' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I clicked on "x" button</div>
 
 
 		</li>
-		<li test-id='64' class='node and Pass' status='Pass'>
+		<li test-id='77' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I keyed "876.59" into the calculator</div>
 
 
 		</li>
-		<li test-id='65' class='node and Pass' status='Pass'>
+		<li test-id='78' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I clicked on "=" button</div>
 
 
 		</li>
-		<li test-id='66' class='node then Pass' status='Pass'>
+		<li test-id='79' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then "49,547,496.57" should be displayed on the result screen</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='69' status='pass'>
+<div class='scenario node' test-id='83' status='pass'>
 
-	<span class='duration right label'>00 00 22.949</span>
+	<span class='duration right label'>00 00 20.992</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Subtraction of two numbers</div>
 	</div>
@@ -534,32 +536,32 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='71' class='node given Pass' status='Pass'>
+		<li test-id='86' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_am_on_standard_calculator_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am on standard calculator screen</div>
 
 
 		</li>
-		<li test-id='72' class='node when Pass' status='Pass'>
+		<li test-id='87' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I keyed "5897547878623" into the calculator</div>
 
 
 		</li>
-		<li test-id='73' class='node and Pass' status='Pass'>
+		<li test-id='88' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I clicked on "-" button</div>
 
 
 		</li>
-		<li test-id='74' class='node and Pass' status='Pass'>
+		<li test-id='89' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I keyed "2758.578" into the calculator</div>
 
 
 		</li>
-		<li test-id='75' class='node and Pass' status='Pass'>
+		<li test-id='90' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I clicked on "=" button</div>
 
 
 		</li>
-		<li test-id='76' class='node then Pass' status='Pass'>
+		<li test-id='91' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then "5,897,547,875,864.422" should be displayed on the result screen</div>
 
 
@@ -568,10 +570,10 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='79'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='95'>
 					<div class='test-heading'>
 						<span class='test-name'>This is to test Notepad features</span>
-						<span class='test-time'>Aug 15, 2022 05:13:37 pm</span>
+						<span class='test-time'>Aug 16, 2022 01:10:45 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -583,9 +585,9 @@
 </div>
 	<div class='test-desc'>  Sample user story details (As a ...., I want to ...., So that .... ), JIRA ticket references etc can be provided her</div>
 
-<div class='scenario node' test-id='80' status='pass'>
+<div class='scenario node' test-id='96' status='pass'>
 
-	<span class='duration right label'>00 00 07.211</span>
+	<span class='duration right label'>00 00 05.148</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Launch notepad, verify "About Notepad" option, enter some text in notepad and save the file.</div>
 	</div>
@@ -597,32 +599,32 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='82' class='node given Pass' status='Pass'>
+		<li test-id='99' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.notepad.NotepadStepDefinitions.iHaveLaunchedOnNotepadScreen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I have launched Notepad application</div>
 
 
 		</li>
-		<li test-id='83' class='node when Pass' status='Pass'>
+		<li test-id='100' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.notepad.NotepadStepDefinitions.iClickOnMenuOption(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on "Help" menu option</div>
 
 
 		</li>
-		<li test-id='84' class='node and Pass' status='Pass'>
+		<li test-id='101' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.notepad.NotepadStepDefinitions.iClickOnMenuOption(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I select "About Notepad" option</div>
 
 
 		</li>
-		<li test-id='85' class='node then Pass' status='Pass'>
+		<li test-id='102' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.notepad.NotepadStepDefinitions.iViewTextAppearingOnScreen(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I view "Microsoft Windows" text appearing on screen</div>
 
 
 		</li>
-		<li test-id='86' class='node when Pass' status='Pass'>
+		<li test-id='103' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.notepad.NotepadStepDefinitions.iClickOnMenuOption(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on "OK" button</div>
 
 
 		</li>
-		<li test-id='87' class='node then Pass' status='Pass'>
+		<li test-id='104' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.notepad.NotepadStepDefinitions.mouseCursorGoesToTheWindowOnNotepadApplication(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Mouse cursor goes to the "Text Editor" window on notepad application</div>
 
 
@@ -631,10 +633,10 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='90'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='108'>
 					<div class='test-heading'>
 						<span class='test-name'>Login page feature</span>
-						<span class='test-time'>Aug 15, 2022 05:13:44 pm</span>
+						<span class='test-time'>Aug 16, 2022 01:10:50 pm</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -645,9 +647,9 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='91' status='fail'>
+<div class='scenario node' test-id='109' status='fail'>
 
-	<span class='duration right label'>00 00 06.540</span>
+	<span class='duration right label'>00 00 03.675</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Login page title</div>
 	</div>
@@ -658,17 +660,17 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='93' class='node given Pass' status='Pass'>
+		<li test-id='112' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.web.LoginPageStep.user_is_on_login_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user is on login page</div>
 
 
 		</li>
-		<li test-id='94' class='node when Pass' status='Pass'>
+		<li test-id='113' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.web.LoginPageStep.user_gets_the_title_of_the_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user gets the title of the page</div>
 
 
 		</li>
-		<li test-id='95' class='node then Fail' status='Fail'>
+		<li test-id='114' class='node then Fail' status='Fail'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.web.LoginPageStep.page_title_should_be(java.lang.String))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then page title should be "Login - My Store1"</div>
 
 
@@ -680,7 +682,7 @@
 	at ?.page title should be "Login - My Store1"(file:///D:/myProjects/winapps-bdd-java-framework/src/test/resources/features/sample/web/web.feature:6)
 </textarea>
 		</li>
-		<li test-id='96' class='node * Pass' status='Pass'>
+		<li test-id='115' class='node * Pass' status='Pass'>
 			<div class="step-name" title="(AFTER)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.winapps.apphooks.ApplicationHooks.screenshotOnFailure(io.cucumber.java.Scenario)</div>
 
 
@@ -691,11 +693,11 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='98' status='pass'>
+<div class='scenario node' test-id='118' status='fail'>
 
-	<span class='duration right label'>00 00 07.067</span>
+	<span class='duration right label'>00 00 03.407</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Forgot Password link</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Forgot Password link</div>
 	</div>
 	
 	
@@ -704,61 +706,211 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='100' class='node given Pass' status='Pass'>
+		<li test-id='121' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.winapps.stepdefs.sample.web.LoginPageStep.user_is_on_login_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user is on login page</div>
 
 
 		</li>
-		<li test-id='101' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.winapps.stepdefs.sample.web.LoginPageStep.forgot_your_password_link_should_be_displayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then forgot your password link should be displayed</div>
+		<li test-id='122' class='node then Fail' status='Fail'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.web.LoginPageStep.forgot_your_password_link_should_be_displayed())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then forgot your password link should be displayed</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Forgot your password?"}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-L36RJ62', ip: '172.31.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SDPKM-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55467}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1e9e0fe948862bfd4f72d73d7345b87
+*** Element info: {Using=link text, value=Forgot your password?}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.winapps.pageobjects.sample.web.LoginPage.isForgotPwdLinkExist(LoginPage.java:28)
+	at com.winapps.stepdefs.sample.web.LoginPageStep.forgot_your_password_link_should_be_displayed(LoginPageStep.java:34)
+	at ?.forgot your password link should be displayed(file:///D:/myProjects/winapps-bdd-java-framework/src/test/resources/features/sample/web/web.feature:10)
+</textarea>
+		</li>
+		<li test-id='123' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.winapps.apphooks.ApplicationHooks.screenshotOnFailure(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">Forgot_Password_link</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded3.png' src='../embedded3.png'>
+					</div>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='126'>
+					<div class='test-heading'>
+						<span class='test-name'>This is to test calculation feature of the Windows Calculator App and verifying the result in a web app</span>
+						<span class='test-time'>Aug 16, 2022 01:10:57 pm</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+	<div class='test-desc'>  Sample user story details (As a ...., I want to ...., So that .... ), JIRA ticket references etc can be provided here</div>
+
+<div class='scenario node' test-id='127' status='pass'>
+
+	<span class='duration right label'>00 00 33.095</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Addition of two numbers - To test pass on web</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@madetopass</span>
+				<span class='category label'>@WebApp</span>
+				<span class='category label'>@Calculator</span>
+				<span class='category label'>@WinApp</span>
+				<span class='category label'>@addwinweb</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='131' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_am_on_standard_calculator_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am on standard calculator screen</div>
+
+
+		</li>
+		<li test-id='132' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I clicked "4" into the calculator</div>
+
+
+		</li>
+		<li test-id='133' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I clicked on "+" button</div>
+
+
+		</li>
+		<li test-id='134' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I clicked "3" into the calculator</div>
+
+
+		</li>
+		<li test-id='135' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I clicked on "=" button</div>
+
+
+		</li>
+		<li test-id='136' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then "7" should be displayed on the result screen</div>
+
+
+		</li>
+		<li test-id='137' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.winweb.OnlineBasicCalcStepDef.i_note_down_result_and_close_windows_calculator_app_and_open_web_app())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I note down result and close Windows Calculator App and Open WebApp</div>
+
+
+		</li>
+		<li test-id='138' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.winweb.OnlineBasicCalcStepDef.i_did_a_sum_operation_of_and_and_clicked_on_button(java.lang.String,java.lang.String,java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I did a sum "+" operation of "4" and "3" and clicked on "=" button</div>
+
+
+		</li>
+		<li test-id='139' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.winweb.OnlineBasicCalcStepDef.i_get_as_result_and_this_is_same_as_result_shown_by_windows_calculator_app(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I get "7" as result and this is same as result shown by Windows calculator App</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='104' status='pass'>
+<div class='scenario node' test-id='144' status='fail'>
 
-	<span class='duration right label'>00 00 09.219</span>
+	<span class='duration right label'>00 00 33.709</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Login with correct credentials</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Addition of two numbers - To test failure on web</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@Smoke</span>
+				<span class='category label'>@madetofail</span>
 				<span class='category label'>@WebApp</span>
+				<span class='category label'>@Calculator</span>
+				<span class='category label'>@WinApp</span>
+				<span class='category label'>@addwinweb</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='106' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.winapps.stepdefs.sample.web.LoginPageStep.user_is_on_login_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user is on login page</div>
+		<li test-id='148' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_am_on_standard_calculator_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am on standard calculator screen</div>
 
 
 		</li>
-		<li test-id='107' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.winapps.stepdefs.sample.web.LoginPageStep.user_enters_username(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user enters username "dec2020secondbatch@gmail.com"</div>
+		<li test-id='149' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I clicked "4" into the calculator</div>
 
 
 		</li>
-		<li test-id='108' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.winapps.stepdefs.sample.web.LoginPageStep.user_enters_password(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user enters password "Selenium@12345"</div>
+		<li test-id='150' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I clicked on "+" button</div>
 
 
 		</li>
-		<li test-id='109' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.winapps.stepdefs.sample.web.LoginPageStep.user_clicks_on_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user clicks on Login button</div>
+		<li test-id='151' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.iKeyedIntoTheCalculator(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I clicked "3" into the calculator</div>
 
 
 		</li>
-		<li test-id='110' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.winapps.stepdefs.sample.web.LoginPageStep.user_gets_the_title_of_the_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then user gets the title of the page</div>
+		<li test-id='152' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.i_clicked_on_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I clicked on "=" button</div>
 
 
 		</li>
-		<li test-id='111' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.winapps.stepdefs.sample.web.LoginPageStep.page_title_should_be(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And page title should be "My account - My Store"</div>
+		<li test-id='153' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then "7" should be displayed on the result screen</div>
 
 
+		</li>
+		<li test-id='154' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.winweb.OnlineBasicCalcStepDef.i_note_down_result_and_close_windows_calculator_app_and_open_web_app())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I note down result and close Windows Calculator App and Open WebApp</div>
+
+
+		</li>
+		<li test-id='155' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.winweb.OnlineBasicCalcStepDef.i_did_a_sum_operation_of_and_and_clicked_on_button(java.lang.String,java.lang.String,java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I did a sum "+" operation of "4" and "3" and clicked on "=" button</div>
+
+
+		</li>
+		<li test-id='156' class='node then Fail' status='Fail'>
+			<div class="step-name" title="(com.winapps.stepdefs.sample.winweb.OnlineBasicCalcStepDef.i_get_as_result_and_this_is_same_as_result_shown_by_windows_calculator_app(java.lang.String))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then I get "9" as result and this is same as result shown by Windows calculator App</div>
+
+
+					<textarea disabled class="code-block">org.junit.ComparisonFailure: Actual displayed value on web didn't match with expected value! expected:<Display is [9]> but was:<Display is [7]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at com.winapps.stepdefs.sample.winweb.OnlineBasicCalcStepDef.i_get_as_result_and_this_is_same_as_result_shown_by_windows_calculator_app(OnlineBasicCalcStepDef.java:44)
+	at ?.I get "9" as result and this is same as result shown by Windows calculator App(file:///D:/myProjects/winapps-bdd-java-framework/src/test/resources/features/sample/winweb/wintoweb.feature:27)
+</textarea>
+		</li>
+		<li test-id='157' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.winapps.apphooks.ApplicationHooks.screenshotOnFailure(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">Addition_of_two_numbers_-_To_test_failure_on_web</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded4.png' src='../embedded4.png'>
+					</div>
 		</li>
 	</ul>
 </div>
@@ -806,15 +958,186 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
+						<span class='category-name'>@add</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 16, 2022 01:09:51 pm</td>
+										<td class='linked' test-id='59'>Addition of two numbers</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@WebApp</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						<span class='label fail'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 3</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 16, 2022 01:10:50 pm</td>
+										<td class='linked' test-id='109'>Login page title</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:10:54 pm</td>
+										<td class='linked' test-id='118'>Forgot Password link</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:10:57 pm</td>
+										<td class='linked' test-id='127'>Addition of two numbers - To test pass on web</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:11:31 pm</td>
+										<td class='linked' test-id='144'>Addition of two numbers - To test failure on web</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
 						<span class='category-name'>@WinApp</span>
 						<span class='category-status right'>
-						<span class='label pass'>8</span>
+						<span class='label pass'>9</span>
+						<span class='label fail'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 9</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 3</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 16, 2022 01:08:47 pm</td>
+										<td class='linked' test-id='2'>Basic test of "<operation>" operation using data table</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:08:47 pm</td>
+										<td class='linked' test-id='3'>Basic test of "+" operation using data table</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:08:59 pm</td>
+										<td class='linked' test-id='14'>Basic test of "x" operation using data table</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:09:10 pm</td>
+										<td class='linked' test-id='25'>Basic test of "÷" operation using data table</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:09:22 pm</td>
+										<td class='linked' test-id='36'>Basic test of "-" operation using data table</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:09:35 pm</td>
+										<td class='linked' test-id='47'>Division of two numbers</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:09:51 pm</td>
+										<td class='linked' test-id='59'>Addition of two numbers</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:10:06 pm</td>
+										<td class='linked' test-id='71'>Multiplication of two numbers</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:10:24 pm</td>
+										<td class='linked' test-id='83'>Subtraction of two numbers</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:10:45 pm</td>
+										<td class='linked' test-id='96'>Launch notepad, verify "About Notepad" option, enter some text in notepad and save the file.</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:10:57 pm</td>
+										<td class='linked' test-id='127'>Addition of two numbers - To test pass on web</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:11:31 pm</td>
+										<td class='linked' test-id='144'>Addition of two numbers - To test failure on web</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@regression</span>
+						<span class='category-status right'>
+						<span class='label pass'>3</span>
 						<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 8</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
 							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
@@ -829,53 +1152,28 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 15, 2022 05:11:23 pm</td>
+										<td>Aug 16, 2022 01:08:47 pm</td>
 										<td class='linked' test-id='2'>Basic test of "<operation>" operation using data table</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 									<tr>
-										<td>Aug 15, 2022 05:11:23 pm</td>
+										<td>Aug 16, 2022 01:08:47 pm</td>
 										<td class='linked' test-id='3'>Basic test of "+" operation using data table</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 15, 2022 05:11:37 pm</td>
-										<td class='linked' test-id='12'>Basic test of "x" operation using data table</td>
+										<td>Aug 16, 2022 01:08:59 pm</td>
+										<td class='linked' test-id='14'>Basic test of "x" operation using data table</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 									<tr>
-										<td>Aug 15, 2022 05:11:50 pm</td>
-										<td class='linked' test-id='21'>Basic test of "÷" operation using data table</td>
+										<td>Aug 16, 2022 01:09:10 pm</td>
+										<td class='linked' test-id='25'>Basic test of "÷" operation using data table</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 15, 2022 05:12:04 pm</td>
-										<td class='linked' test-id='30'>Basic test of "-" operation using data table</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 15, 2022 05:12:19 pm</td>
-										<td class='linked' test-id='39'>Division of two numbers</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 15, 2022 05:12:36 pm</td>
-										<td class='linked' test-id='49'>Addition of two numbers</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 15, 2022 05:12:54 pm</td>
-										<td class='linked' test-id='59'>Multiplication of two numbers</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 15, 2022 05:13:14 pm</td>
-										<td class='linked' test-id='69'>Subtraction of two numbers</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 15, 2022 05:13:37 pm</td>
-										<td class='linked' test-id='80'>Launch notepad, verify "About Notepad" option, enter some text in notepad and save the file.</td>
+										<td>Aug 16, 2022 01:09:22 pm</td>
+										<td class='linked' test-id='36'>Basic test of "-" operation using data table</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -885,15 +1183,15 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@WebApp</span>
+						<span class='category-name'>@addwinweb</span>
 						<span class='category-status right'>
-						<span class='label pass'>2</span>
+						<span class='label pass'>1</span>
 						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
@@ -908,18 +1206,163 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 15, 2022 05:13:44 pm</td>
-										<td class='linked' test-id='91'>Login page title</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-									<tr>
-										<td>Aug 15, 2022 05:13:51 pm</td>
-										<td class='linked' test-id='98'>Forgot Password link</td>
+										<td>Aug 16, 2022 01:10:57 pm</td>
+										<td class='linked' test-id='127'>Addition of two numbers - To test pass on web</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 15, 2022 05:13:58 pm</td>
-										<td class='linked' test-id='104'>Login with correct credentials</td>
+										<td>Aug 16, 2022 01:11:31 pm</td>
+										<td class='linked' test-id='144'>Addition of two numbers - To test failure on web</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@smoke</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 16, 2022 01:09:51 pm</td>
+										<td class='linked' test-id='59'>Addition of two numbers</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Calculator</span>
+						<span class='category-status right'>
+						<span class='label pass'>8</span>
+						<span class='label fail'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 8</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 3</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 16, 2022 01:08:47 pm</td>
+										<td class='linked' test-id='2'>Basic test of "<operation>" operation using data table</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:08:47 pm</td>
+										<td class='linked' test-id='3'>Basic test of "+" operation using data table</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:08:59 pm</td>
+										<td class='linked' test-id='14'>Basic test of "x" operation using data table</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:09:10 pm</td>
+										<td class='linked' test-id='25'>Basic test of "÷" operation using data table</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:09:22 pm</td>
+										<td class='linked' test-id='36'>Basic test of "-" operation using data table</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:09:35 pm</td>
+										<td class='linked' test-id='47'>Division of two numbers</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:09:51 pm</td>
+										<td class='linked' test-id='59'>Addition of two numbers</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:10:06 pm</td>
+										<td class='linked' test-id='71'>Multiplication of two numbers</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:10:24 pm</td>
+										<td class='linked' test-id='83'>Subtraction of two numbers</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:10:57 pm</td>
+										<td class='linked' test-id='127'>Addition of two numbers - To test pass on web</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 16, 2022 01:11:31 pm</td>
+										<td class='linked' test-id='144'>Addition of two numbers - To test failure on web</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@subtract</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 16, 2022 01:10:24 pm</td>
+										<td class='linked' test-id='83'>Subtraction of two numbers</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -951,8 +1394,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 15, 2022 05:13:37 pm</td>
-										<td class='linked' test-id='80'>Launch notepad, verify "About Notepad" option, enter some text in notepad and save the file.</td>
+										<td>Aug 16, 2022 01:10:45 pm</td>
+										<td class='linked' test-id='96'>Launch notepad, verify "About Notepad" option, enter some text in notepad and save the file.</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -962,7 +1405,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@smoke</span>
+						<span class='category-name'>@divide</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -984,8 +1427,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 15, 2022 05:12:36 pm</td>
-										<td class='linked' test-id='49'>Addition of two numbers</td>
+										<td>Aug 16, 2022 01:09:35 pm</td>
+										<td class='linked' test-id='47'>Division of two numbers</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -995,7 +1438,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Smoke</span>
+						<span class='category-name'>@madetopass</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -1017,8 +1460,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 15, 2022 05:13:58 pm</td>
-										<td class='linked' test-id='104'>Login with correct credentials</td>
+										<td>Aug 16, 2022 01:10:57 pm</td>
+										<td class='linked' test-id='127'>Addition of two numbers - To test pass on web</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -1028,16 +1471,15 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Calculator</span>
+						<span class='category-name'>@madetofail</span>
 						<span class='category-status right'>
-						<span class='label pass'>7</span>
-						<span class='label fail'>2</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 7</span>
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -1051,48 +1493,41 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 15, 2022 05:11:23 pm</td>
-										<td class='linked' test-id='2'>Basic test of "<operation>" operation using data table</td>
+										<td>Aug 16, 2022 01:11:31 pm</td>
+										<td class='linked' test-id='144'>Addition of two numbers - To test failure on web</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@multiply</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
 									<tr>
-										<td>Aug 15, 2022 05:11:23 pm</td>
-										<td class='linked' test-id='3'>Basic test of "+" operation using data table</td>
-										<td><span class='test-status Pass'>Pass</span></td>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
 									</tr>
+								</thead>
+								<tbody>
 									<tr>
-										<td>Aug 15, 2022 05:11:37 pm</td>
-										<td class='linked' test-id='12'>Basic test of "x" operation using data table</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-									<tr>
-										<td>Aug 15, 2022 05:11:50 pm</td>
-										<td class='linked' test-id='21'>Basic test of "÷" operation using data table</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 15, 2022 05:12:04 pm</td>
-										<td class='linked' test-id='30'>Basic test of "-" operation using data table</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 15, 2022 05:12:19 pm</td>
-										<td class='linked' test-id='39'>Division of two numbers</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 15, 2022 05:12:36 pm</td>
-										<td class='linked' test-id='49'>Addition of two numbers</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 15, 2022 05:12:54 pm</td>
-										<td class='linked' test-id='59'>Multiplication of two numbers</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 15, 2022 05:13:14 pm</td>
-										<td class='linked' test-id='69'>Subtraction of two numbers</td>
+										<td>Aug 16, 2022 01:10:06 pm</td>
+										<td class='linked' test-id='71'>Multiplication of two numbers</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -1125,214 +1560,28 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 15, 2022 05:11:23 pm</td>
+										<td>Aug 16, 2022 01:08:47 pm</td>
 										<td class='linked' test-id='2'>Basic test of "<operation>" operation using data table</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 									<tr>
-										<td>Aug 15, 2022 05:11:23 pm</td>
+										<td>Aug 16, 2022 01:08:47 pm</td>
 										<td class='linked' test-id='3'>Basic test of "+" operation using data table</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 15, 2022 05:11:37 pm</td>
-										<td class='linked' test-id='12'>Basic test of "x" operation using data table</td>
+										<td>Aug 16, 2022 01:08:59 pm</td>
+										<td class='linked' test-id='14'>Basic test of "x" operation using data table</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 									<tr>
-										<td>Aug 15, 2022 05:11:50 pm</td>
-										<td class='linked' test-id='21'>Basic test of "÷" operation using data table</td>
+										<td>Aug 16, 2022 01:09:10 pm</td>
+										<td class='linked' test-id='25'>Basic test of "÷" operation using data table</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 15, 2022 05:12:04 pm</td>
-										<td class='linked' test-id='30'>Basic test of "-" operation using data table</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@regression</span>
-						<span class='category-status right'>
-						<span class='label pass'>3</span>
-						<span class='label fail'>2</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 15, 2022 05:11:23 pm</td>
-										<td class='linked' test-id='2'>Basic test of "<operation>" operation using data table</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-									<tr>
-										<td>Aug 15, 2022 05:11:23 pm</td>
-										<td class='linked' test-id='3'>Basic test of "+" operation using data table</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 15, 2022 05:11:37 pm</td>
-										<td class='linked' test-id='12'>Basic test of "x" operation using data table</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-									<tr>
-										<td>Aug 15, 2022 05:11:50 pm</td>
-										<td class='linked' test-id='21'>Basic test of "÷" operation using data table</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 15, 2022 05:12:04 pm</td>
-										<td class='linked' test-id='30'>Basic test of "-" operation using data table</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@multiply</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 15, 2022 05:12:54 pm</td>
-										<td class='linked' test-id='59'>Multiplication of two numbers</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@subtract</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 15, 2022 05:13:14 pm</td>
-										<td class='linked' test-id='69'>Subtraction of two numbers</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@add</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 15, 2022 05:12:36 pm</td>
-										<td class='linked' test-id='49'>Addition of two numbers</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@divide</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 15, 2022 05:12:19 pm</td>
-										<td class='linked' test-id='39'>Division of two numbers</td>
+										<td>Aug 16, 2022 01:09:22 pm</td>
+										<td class='linked' test-id='36'>Basic test of "-" operation using data table</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -1384,26 +1633,113 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 15, 2022 05:11:43 pm</td>
-										<td class='linked' test-id='18'>Then "7" should be displayed on the result screen</td>
+										<td>Aug 16, 2022 01:09:05 pm</td>
+										<td class='linked' test-id='21'>Then "7" should be displayed on the result screen</td>
 										<td>
 											<textarea disabled class="code-block">java.lang.AssertionError: Values don't match: Expected value of element is 'Display is 7' but actual value of element is 'Display is 10'
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)
-	at com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(StandardCalcStepDefinitions.java:63)
+	at com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(StandardCalcStepDefinitions.java:67)
 	at ?."7" should be displayed on the result screen(file:///D:/myProjects/winapps-bdd-java-framework/src/test/resources/features/sample/calculator/standardcalculator.feature:11)
 </textarea>
 										</td>
 									</tr>
 									<tr>
-										<td>Aug 15, 2022 05:13:48 pm</td>
-										<td class='linked' test-id='95'>Then page title should be "Login - My Store1"</td>
+										<td>Aug 16, 2022 01:10:52 pm</td>
+										<td class='linked' test-id='114'>Then page title should be "Login - My Store1"</td>
 										<td>
 											<textarea disabled class="code-block">java.lang.AssertionError: Values don't match: Expected value of element is 'Display is 7' but actual value of element is 'Display is 10'
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)
-	at com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(StandardCalcStepDefinitions.java:63)
+	at com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(StandardCalcStepDefinitions.java:67)
 	at ?."7" should be displayed on the result screen(file:///D:/myProjects/winapps-bdd-java-framework/src/test/resources/features/sample/calculator/standardcalculator.feature:11)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.junit.ComparisonFailure</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 16, 2022 01:12:00 pm</td>
+										<td class='linked' test-id='156'>Then I get "9" as result and this is same as result shown by Windows calculator App</td>
+										<td>
+											<textarea disabled class="code-block">org.junit.ComparisonFailure: Actual displayed value on web didn't match with expected value! expected:<Display is [9]> but was:<Display is [7]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at com.winapps.stepdefs.sample.winweb.OnlineBasicCalcStepDef.i_get_as_result_and_this_is_same_as_result_shown_by_windows_calculator_app(OnlineBasicCalcStepDef.java:44)
+	at ?.I get "9" as result and this is same as result shown by Windows calculator App(file:///D:/myProjects/winapps-bdd-java-framework/src/test/resources/features/sample/winweb/wintoweb.feature:27)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 16, 2022 01:10:55 pm</td>
+										<td class='linked' test-id='122'>Then forgot your password link should be displayed</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Forgot your password?"}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-L36RJ62', ip: '172.31.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SDPKM-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55467}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1e9e0fe948862bfd4f72d73d7345b87
+*** Element info: {Using=link text, value=Forgot your password?}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.winapps.pageobjects.sample.web.LoginPage.isForgotPwdLinkExist(LoginPage.java:28)
+	at com.winapps.stepdefs.sample.web.LoginPageStep.forgot_your_password_link_should_be_displayed(LoginPageStep.java:34)
+	at ?.forgot your password link should be displayed(file:///D:/myProjects/winapps-bdd-java-framework/src/test/resources/features/sample/web/web.feature:10)
 </textarea>
 										</td>
 									</tr>
@@ -1429,37 +1765,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>12</div>
+					<div class='panel-lead'>13</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>63</div>
+					<div class='panel-lead'>77</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 15, 2022 05:11:19 pm</div>
+					<div class='panel-lead'>Aug 16, 2022 01:08:44 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 15, 2022 05:14:12 pm</div>
+			 		<div class='panel-lead'>Aug 16, 2022 01:12:10 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 02 53.133</div>
+					<div class='panel-lead'>00 03 26.124</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1507,66 +1843,30 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@WinApp</td>
-							<td>8</td>
-							<td>2</td>
+							<td>@add</td>
+							<td>1</td>
+							<td>0</td>
 							<td>0</td>
 							<td>
-									80%
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>@WebApp</td>
-							<td>2</td>
 							<td>1</td>
-							<td>0</td>
-							<td>
-									66.667%
-							</td>
-						</tr>
-						<tr>
-							<td>@Notepad</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@smoke</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@Smoke</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@Calculator</td>
-							<td>7</td>
-							<td>2</td>
-							<td>0</td>
-							<td>
-									77.778%
-							</td>
-						</tr>
-						<tr>
-							<td>@multiple</td>
 							<td>3</td>
-							<td>2</td>
 							<td>0</td>
 							<td>
-									60%
+									25%
+							</td>
+						</tr>
+						<tr>
+							<td>@WinApp</td>
+							<td>9</td>
+							<td>3</td>
+							<td>0</td>
+							<td>
+									75%
 							</td>
 						</tr>
 						<tr>
@@ -1579,12 +1879,30 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@multiply</td>
+							<td>@addwinweb</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									50%
+							</td>
+						</tr>
+						<tr>
+							<td>@smoke</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
 									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Calculator</td>
+							<td>8</td>
+							<td>3</td>
+							<td>0</td>
+							<td>
+									72.727%
 							</td>
 						</tr>
 						<tr>
@@ -1597,7 +1915,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@add</td>
+							<td>@Notepad</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -1614,6 +1932,42 @@
 									100%
 							</td>
 						</tr>
+						<tr>
+							<td>@madetopass</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@madetofail</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@multiply</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@multiple</td>
+							<td>3</td>
+							<td>2</td>
+							<td>0</td>
+							<td>
+									60%
+							</td>
+						</tr>
 					</table>
 				</div>
 			</div>
@@ -1625,24 +1979,24 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 3,
+                parentCount: 4,
 				passParent: 1,
-				failParent: 2,
+				failParent: 3,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 12,
-				passChild: 10,
-				failChild: 2,
+				childCount: 13,
+				passChild: 9,
+				failChild: 4,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 63,
-				passGrandChild: 61,
-				failGrandChild: 2,
+				grandChildCount: 77,
+				passGrandChild: 73,
+				failGrandChild: 4,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
@@ -1653,7 +2007,7 @@
 		
 		<script>
 			var timeline = {
-			        "This is to test calculation feature of the Windows Calculator App":134.481,"This is to test Notepad features":7.211,"Login page feature":22.839
+			        "This is to test calculation feature of the Windows Calculator App":118.238,"This is to test Notepad features":5.148,"Login page feature":7.088,"This is to test calculation feature of the Windows Calculator App and verifying the result in a web app":66.811
 			};
 		</script>
 		

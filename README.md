@@ -1,6 +1,8 @@
 # winapps-bdd-java-framework
 Test Framework for Testing Windows Apps using WinAppDriver, Selenium, Appium & Java.
 
+
+### Finding Application IDs
 Powershell example command to get the App ID: 
 
 ```powershell
@@ -13,12 +15,7 @@ Name       AppID
 Calculator Microsoft.WindowsCalculator_8wekyb3d8bbwe!App
 ```
 
-Pom sorting
-
-```
-> mvn sortpom:sort
-```
-Framework elemts:
+### Framework elements:
 1. Takes Screenshots on failure and attaches to the report (can be any report, currently used cluecumber)
 2. Screen Recording (Feature to record the test run and save that in avi format. Caution! Keep cleaning the directory for better disk space)
 3. Excel utility - Data driven (Testing run time data can be read from and written to excel - The excel file must exist as a pre-req)
@@ -31,7 +28,9 @@ Framework elemts:
 10. Distributed Runs (Future Development)- can be extended to set-up to run with node/server struture (Using of selenium grid, WD hub etc)
 11. Has logging capability using Apache Log4j2 api
 
-Running Cucumber Tests from Maven
+### Running Cucumber Tests using Maven Surefire plugin
+
+
 
 - Simple mvn test (This will use all tags defined in the `TestSuiteRunner.java` file)
 ```
@@ -56,22 +55,37 @@ Following example will run only `@regression` tests from `@Calculcator` feature 
 > mvn clean verify test
 ```
 
-Run following command to check on versions for dependencies and plugins:
+### Additional Helping commands and resources
+
+- Run following command to check on versions for dependencies and plugins:
 ```
 > mvn versions:display-dependency-updates
+```
+- Pom sorting
+
+```
+> mvn sortpom:sort
 ```
 
 >- Additional Configuration help for cluecumber report - https://github.com/trivago/cluecumber-report-plugin
 >- Additional documentation for WebDriverManager - https://bonigarcia.dev/webdrivermanager/
 >- Additional documentation for Extent Report adapter (Cucumber JVM 7) - https://ghchirp.online/3196/
 
-Pre-requisites: 
+### Pre-requisites: 
 
 - Ensure the exe file path for WindowsApplicationDriver is correct in WinAppDriver.bat file located in `src/test/resources/drivers/`
 - Ensure that directory exists `test-output/screen-recordings` in the root for screen-recording fies to save
 - Configure (config.properties), all file paths and driver exe paths
 
-Future Enhancement TODOs:
+
+### Guidelines:
+- Feature Level Tagging recommendations
+  - User Feature level tagging to connect with Cucumber Hooks defined in `ApplicationHooks.java` class. Example approach:
+    - If testing for`Windows Applications` only, then use `@WinApp` tag at feature level along with application name tag which will start the application session, e.g. `@Calculator`
+    - If Testing for `Web Applications` only, then use `@WebApp` tag at feature level along with application name tag, e.g. `@CalculatorWeb`. `@WebApp` tag will ensure that a web browser has been started in the background of tests steps run.
+    - If Testing for both `Windows` and `Web` Applications, then use both `@WinApp` and `@WebApp` tags at feature level along with application name tag (e.g. `@Calculator`, it will ensure both Windows Application and Web Browser sessions are started in the background before steps are run. 
+
+### Future Enhancement TODOs:
 - Remove or comment TestNG (calls and dependencies from project) for mvn test to show results of only cucumber test runs
 - Framework to be extended to be used for linked WebApplications for testing with the same test scenario
 - Parallel runs not required based on application testing iterations, however in future runs it can be added to the framework

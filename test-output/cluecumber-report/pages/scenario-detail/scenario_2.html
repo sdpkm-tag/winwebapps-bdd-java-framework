@@ -77,6 +77,7 @@ font-src * data: blob: 'unsafe-inline';"/>
             var chart = new Chart(ctx, {
   "data": {
     "labels": [
+      "com.winapps.apphooks.ApplicationHooks.logScenarioStart(io.cucumber.java.Scenario)",
       "com.winapps.apphooks.ApplicationHooks.startCalculatorApp(io.cucumber.java.Scenario)",
       "I have keyed \"2\" into the calculator",
       "I have clicked on \"x\" button",
@@ -84,21 +85,26 @@ font-src * data: blob: 'unsafe-inline';"/>
       "I press on \"\u003d\" button to get the calculation result",
       "\"7\" should be displayed on the result screen",
       "com.winapps.apphooks.ApplicationHooks.screenshotOnFailure(io.cucumber.java.Scenario)",
-      "com.winapps.apphooks.ApplicationHooks.closeWinAppSession(io.cucumber.java.Scenario)"
+      "com.winapps.apphooks.ApplicationHooks.closeWinAppSession(io.cucumber.java.Scenario)",
+      "com.winapps.apphooks.ApplicationHooks.logScenarioEndAndStatus(io.cucumber.java.Scenario)"
     ],
     "datasets": [
       {
         "data": [
           0,
+          1,
           0,
           2,
           0,
           2,
           0,
           0,
-          4
+          2,
+          0
         ],
         "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
@@ -118,11 +124,15 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
+          0,
           2,
+          0,
           0,
           0
         ],
         "backgroundColor": [
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
@@ -144,9 +154,13 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
@@ -182,7 +196,7 @@ font-src * data: blob: 'unsafe-inline';"/>
         {
           "ticks": {
             "min": 0,
-            "stepSize": 4,
+            "stepSize": 2,
             "display": true
           },
           "stacked": true,
@@ -285,7 +299,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <a class="nav-link " href="pages/feature-summary.html">All Features</a>
                     </li>
             </ul>
-            <span class="text-light">2022-08-15 17:14:17</span>
+            <span class="text-light">2022-08-16 13:12:15</span>
         </div>
     </nav>
     <main role="main" class="container">
@@ -314,9 +328,9 @@ font-src * data: blob: 'unsafe-inline';"/>
         <div class="card h-100">
                 <div class="card-header">Scenario Info</div>
             <div class="card-body">
-                <li class="list-group-item">Started on:<br>2022-08-15 17:11:37</li>
-                <li class="list-group-item">Ended on:<br>2022-08-15 17:11:50</li>
-            <li class="list-group-item">Test Runtime:<br>0m 12s 832ms</li>
+                <li class="list-group-item">Started on:<br>2022-08-16 13:08:59</li>
+                <li class="list-group-item">Ended on:<br>2022-08-16 13:09:10</li>
+            <li class="list-group-item">Test Runtime:<br>0m 10s 970ms</li>
             <li class="list-group-item">
                     <a href="pages/tag-scenarios/tag_WinApp.html">@WinApp</a>,
 
@@ -379,7 +393,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 315ms
+                                0m 00s 298ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -398,7 +412,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 02s 298ms
+                                0m 02s 290ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -417,7 +431,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 300ms
+                                0m 00s 286ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -436,7 +450,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 02s 289ms
+                                0m 02s 286ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -455,7 +469,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 02s 300ms
+                                0m 02s 271ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
@@ -467,7 +481,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                 <pre class="text-danger small p-2">java.lang.AssertionError: Values don't match: Expected value of element is 'Display is 7' but actual value of element is 'Display is 10'
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)
-	at com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(StandardCalcStepDefinitions.java:63)
+	at com.winapps.stepdefs.sample.calculator.StandardCalcStepDefinitions.shouldBeDisplayedOnTheResultScreen(StandardCalcStepDefinitions.java:67)
 	at &#226;&#339;&#189;.&#34;7&#34; should be displayed on the result screen(<a href='file:///D:/myProjects/winapps-bdd-java-framework/src/test/resources/features/sample/calculator/standardcalculator.feature:11)' target='_blank'>file:///D:/myProjects/winapps-bdd-java-framework/src/test/resources/features/sample/calculator/standardcalculator.feature:11)</a>
 </pre>
             </div>
@@ -490,7 +504,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                         <i>com.winapps.apphooks.ApplicationHooks.screenshotOnFailure(io.cucumber.java.Scenario)</i>
                                     </div>
                                     <div class="col-2 text-left small">
-                                        0m 00s 533ms
+                                        0m 00s 495ms
                                     </div>
                                     <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -498,12 +512,12 @@ font-src * data: blob: 'unsafe-inline';"/>
                                     </div>
             <div class="row w-100 p-3 m-0 scenarioAttachment">
                 <div class="w-100 p-1 m-0 border-bottom small text-left">
-                    <a class="btn-link" data-toggle="collapse" href="#expandable431550909" role="button"
-                       aria-expanded="false" aria-controls="expandable431550909">Toggle</a> |
+                    <a class="btn-link" data-toggle="collapse" href="#expandable587573968" role="button"
+                       aria-expanded="false" aria-controls="expandable587573968">Toggle</a> |
                         Basic_test_of_"x"_operation_using_data_table (PNG attachment)
                 </div>
                 <div class="w-100 text-left m-auto">
-                    <div class="w-100 text-left m-auto collapse show" id="expandable431550909">
+                    <div class="w-100 text-left m-auto collapse show" id="expandable587573968">
                             <a class="grouped_elements" rel="images" href="attachments/attachment001.png">
                                 <img src="attachments/attachment001.png" class="embedded-image"
                                      style="max-width: 50%;"
@@ -524,7 +538,7 @@ font-src * data: blob: 'unsafe-inline';"/>
 
 <footer class="footer navbar-dark">
     <div class="container-fluid">
-        <span>Cluecumber Report Plugin version 2.8.0 - Report generated on 2022-08-15 17:14:17.</span>
+        <span>Cluecumber Report Plugin version 2.8.0 - Report generated on 2022-08-16 13:12:15.</span>
     </div>
 </footer>    </body>
     </html>
