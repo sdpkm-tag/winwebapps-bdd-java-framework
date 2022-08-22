@@ -85,9 +85,9 @@ Following example will run only `@regression` tests from `@Calculcator` feature 
 ### Pre-requisites: 
 
 - Ensure that `Developer Mode` is `enabled` on the machine(s) where Windows Applications are required to be interacted / tested using the WinAppDriver based framework. Developer settings can be found in Windows Settings menu.
-- Ensure the exe file path for `WindowsApplicationDriver` is correct in `WinAppDriver.bat` file located in `src/test/resources/drivers/`
+- Ensure the exe file path for `WindowsApplicationDriver` is correct in `WinAppDriver.bat` file located in `src/test/resources/drivers/`. To set-up and install Windows Application driver refer to latest [official microsoft releases](https://github.com/Microsoft/WinAppDriver/releases) and install using instructions provided [here](https://github.com/microsoft/WinAppDriver#install--run-winappdriver).
 - Ensure that directory exists `test-output/screen-recordings` in the root for screen-recording fies to save
-- Configure (config.properties), all file paths and driver exe paths
+- Configure (config.properties), all file paths and web browser driver exe paths
 
 
 ### Guidelines:
