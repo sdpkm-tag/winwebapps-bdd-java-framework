@@ -1,0 +1,86 @@
+2022-08-22 14:22:29 INFO  c.w.u.LogUtil [main]:22 - Windows Application Driver has successfully started and running in the background!
+2022-08-22 14:22:30 INFO  c.w.u.LogUtil [main]:22 - Screen recording of test is enabled.
+2022-08-22 14:22:30 INFO  c.w.u.LogUtil [main]:10 - ===================================== TEST SCENARIO START | Basic test of "+" operation using data table =========================================
+2022-08-22 14:22:31 INFO  c.w.u.LogUtil [main]:22 - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----- Calculator Application has launched! ----->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2022-08-22 14:22:40 INFO  c.w.u.LogUtil [main]:22 - Result saved from windows calculator app to the text file as: Display is 50
+2022-08-22 14:22:42 INFO  c.w.u.LogUtil [main]:22 - Windows Application has been closed
+2022-08-22 14:22:42 INFO  c.w.u.LogUtil [main]:14 - ===================================== TEST SCENARIO END | Basic test of "+" operation using data table =========================================
+2022-08-22 14:22:42 INFO  c.w.u.LogUtil [main]:17 - ===================================== TEST SCENARIO STATUS | PASSED =========================================
+2022-08-22 14:22:42 INFO  c.w.u.LogUtil [main]:10 - ===================================== TEST SCENARIO START | Basic test of "x" operation using data table =========================================
+2022-08-22 14:22:43 INFO  c.w.u.LogUtil [main]:22 - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----- Calculator Application has launched! ----->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2022-08-22 14:22:50 INFO  c.w.u.LogUtil [main]:22 - Result saved from windows calculator app to the text file as: Display is 10
+2022-08-22 14:22:50 INFO  c.w.u.LogUtil [main]:22 - Screenshot of Test failure is attached
+2022-08-22 14:22:52 INFO  c.w.u.LogUtil [main]:22 - Windows Application has been closed
+2022-08-22 14:22:52 INFO  c.w.u.LogUtil [main]:14 - ===================================== TEST SCENARIO END | Basic test of "x" operation using data table =========================================
+2022-08-22 14:22:52 INFO  c.w.u.LogUtil [main]:17 - ===================================== TEST SCENARIO STATUS | FAILED =========================================
+2022-08-22 14:22:52 INFO  c.w.u.LogUtil [main]:10 - ===================================== TEST SCENARIO START | Basic test of "÷" operation using data table =========================================
+2022-08-22 14:22:53 INFO  c.w.u.LogUtil [main]:22 - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----- Calculator Application has launched! ----->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2022-08-22 14:23:02 INFO  c.w.u.LogUtil [main]:22 - Result saved from windows calculator app to the text file as: Display is 2.5
+2022-08-22 14:23:04 INFO  c.w.u.LogUtil [main]:22 - Windows Application has been closed
+2022-08-22 14:23:04 INFO  c.w.u.LogUtil [main]:14 - ===================================== TEST SCENARIO END | Basic test of "÷" operation using data table =========================================
+2022-08-22 14:23:04 INFO  c.w.u.LogUtil [main]:17 - ===================================== TEST SCENARIO STATUS | PASSED =========================================
+2022-08-22 14:23:04 INFO  c.w.u.LogUtil [main]:10 - ===================================== TEST SCENARIO START | Basic test of "-" operation using data table =========================================
+2022-08-22 14:23:05 INFO  c.w.u.LogUtil [main]:22 - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----- Calculator Application has launched! ----->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2022-08-22 14:23:15 INFO  c.w.u.LogUtil [main]:22 - Result saved from windows calculator app to the text file as: Display is 628.963
+2022-08-22 14:23:17 INFO  c.w.u.LogUtil [main]:22 - Windows Application has been closed
+2022-08-22 14:23:17 INFO  c.w.u.LogUtil [main]:14 - ===================================== TEST SCENARIO END | Basic test of "-" operation using data table =========================================
+2022-08-22 14:23:17 INFO  c.w.u.LogUtil [main]:17 - ===================================== TEST SCENARIO STATUS | PASSED =========================================
+2022-08-22 14:23:17 INFO  c.w.u.LogUtil [main]:10 - ===================================== TEST SCENARIO START | Division of two numbers =========================================
+2022-08-22 14:23:18 INFO  c.w.u.LogUtil [main]:22 - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----- Calculator Application has launched! ----->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2022-08-22 14:23:31 INFO  c.w.u.LogUtil [main]:22 - Result saved from windows calculator app to the text file as: Display is 1.5
+2022-08-22 14:23:33 INFO  c.w.u.LogUtil [main]:22 - Windows Application has been closed
+2022-08-22 14:23:33 INFO  c.w.u.LogUtil [main]:14 - ===================================== TEST SCENARIO END | Division of two numbers =========================================
+2022-08-22 14:23:33 INFO  c.w.u.LogUtil [main]:17 - ===================================== TEST SCENARIO STATUS | PASSED =========================================
+2022-08-22 14:23:33 INFO  c.w.u.LogUtil [main]:10 - ===================================== TEST SCENARIO START | Addition of two numbers =========================================
+2022-08-22 14:23:34 INFO  c.w.u.LogUtil [main]:22 - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----- Calculator Application has launched! ----->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2022-08-22 14:23:46 INFO  c.w.u.LogUtil [main]:22 - Result saved from windows calculator app to the text file as: Display is 12
+2022-08-22 14:23:48 INFO  c.w.u.LogUtil [main]:22 - Windows Application has been closed
+2022-08-22 14:23:48 INFO  c.w.u.LogUtil [main]:14 - ===================================== TEST SCENARIO END | Addition of two numbers =========================================
+2022-08-22 14:23:48 INFO  c.w.u.LogUtil [main]:17 - ===================================== TEST SCENARIO STATUS | PASSED =========================================
+2022-08-22 14:23:48 INFO  c.w.u.LogUtil [main]:10 - ===================================== TEST SCENARIO START | Multiplication of two numbers =========================================
+2022-08-22 14:23:49 INFO  c.w.u.LogUtil [main]:22 - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----- Calculator Application has launched! ----->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2022-08-22 14:24:04 INFO  c.w.u.LogUtil [main]:22 - Result saved from windows calculator app to the text file as: Display is 49,547,496.57
+2022-08-22 14:24:06 INFO  c.w.u.LogUtil [main]:22 - Windows Application has been closed
+2022-08-22 14:24:06 INFO  c.w.u.LogUtil [main]:14 - ===================================== TEST SCENARIO END | Multiplication of two numbers =========================================
+2022-08-22 14:24:06 INFO  c.w.u.LogUtil [main]:17 - ===================================== TEST SCENARIO STATUS | PASSED =========================================
+2022-08-22 14:24:06 INFO  c.w.u.LogUtil [main]:10 - ===================================== TEST SCENARIO START | Subtraction of two numbers =========================================
+2022-08-22 14:24:07 INFO  c.w.u.LogUtil [main]:22 - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----- Calculator Application has launched! ----->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2022-08-22 14:24:25 INFO  c.w.u.LogUtil [main]:22 - Result saved from windows calculator app to the text file as: Display is 5,897,547,875,864.422
+2022-08-22 14:24:27 INFO  c.w.u.LogUtil [main]:22 - Windows Application has been closed
+2022-08-22 14:24:27 INFO  c.w.u.LogUtil [main]:14 - ===================================== TEST SCENARIO END | Subtraction of two numbers =========================================
+2022-08-22 14:24:27 INFO  c.w.u.LogUtil [main]:17 - ===================================== TEST SCENARIO STATUS | PASSED =========================================
+2022-08-22 14:24:27 INFO  c.w.u.LogUtil [main]:10 - ===================================== TEST SCENARIO START | Launch notepad, verify "About Notepad" option, enter some text in notepad and save the file. =========================================
+2022-08-22 14:24:27 INFO  c.w.u.LogUtil [main]:22 - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----- Notepad Application has launched! ----->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2022-08-22 14:24:32 INFO  c.w.u.LogUtil [main]:22 - Windows Application has been closed
+2022-08-22 14:24:32 INFO  c.w.u.LogUtil [main]:14 - ===================================== TEST SCENARIO END | Launch notepad, verify "About Notepad" option, enter some text in notepad and save the file. =========================================
+2022-08-22 14:24:32 INFO  c.w.u.LogUtil [main]:17 - ===================================== TEST SCENARIO STATUS | PASSED =========================================
+2022-08-22 14:24:32 INFO  c.w.u.LogUtil [main]:10 - ===================================== TEST SCENARIO START | Login page title =========================================
+2022-08-22 14:24:34 INFO  c.w.u.LogUtil [main]:22 - Web Browser 'chrome' launched successfully for scenario: Login page title with tags [@WebApp]
+2022-08-22 14:24:41 INFO  c.w.u.LogUtil [main]:22 - Screenshot of Test failure is attached
+2022-08-22 14:24:43 INFO  c.w.u.LogUtil [main]:22 - Web Browser has been closed
+2022-08-22 14:24:43 INFO  c.w.u.LogUtil [main]:14 - ===================================== TEST SCENARIO END | Login page title =========================================
+2022-08-22 14:24:43 INFO  c.w.u.LogUtil [main]:17 - ===================================== TEST SCENARIO STATUS | FAILED =========================================
+2022-08-22 14:24:43 INFO  c.w.u.LogUtil [main]:10 - ===================================== TEST SCENARIO START | Forgot Password link =========================================
+2022-08-22 14:24:44 INFO  c.w.u.LogUtil [main]:22 - Web Browser 'chrome' launched successfully for scenario: Forgot Password link with tags [@WebApp]
+2022-08-22 14:24:57 INFO  c.w.u.LogUtil [main]:22 - Web Browser has been closed
+2022-08-22 14:24:57 INFO  c.w.u.LogUtil [main]:14 - ===================================== TEST SCENARIO END | Forgot Password link =========================================
+2022-08-22 14:24:57 INFO  c.w.u.LogUtil [main]:17 - ===================================== TEST SCENARIO STATUS | PASSED =========================================
+2022-08-22 14:24:57 INFO  c.w.u.LogUtil [main]:10 - ===================================== TEST SCENARIO START | Addition of two numbers - To test pass on web =========================================
+2022-08-22 14:24:57 INFO  c.w.u.LogUtil [main]:22 - Web Browser 'chrome' launched successfully for scenario: Addition of two numbers - To test pass on web with tags [@WinApp, @WebApp, @Calculator, @addwinweb, @madetopass]
+2022-08-22 14:24:58 INFO  c.w.u.LogUtil [main]:22 - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----- Calculator Application has launched! ----->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2022-08-22 14:25:11 INFO  c.w.u.LogUtil [main]:22 - Result saved from windows calculator app to the text file as: Display is 7
+2022-08-22 14:25:27 INFO  c.w.u.LogUtil [main]:22 - Windows Application has been closed
+2022-08-22 14:25:29 INFO  c.w.u.LogUtil [main]:22 - Web Browser has been closed
+2022-08-22 14:25:29 INFO  c.w.u.LogUtil [main]:14 - ===================================== TEST SCENARIO END | Addition of two numbers - To test pass on web =========================================
+2022-08-22 14:25:29 INFO  c.w.u.LogUtil [main]:17 - ===================================== TEST SCENARIO STATUS | PASSED =========================================
+2022-08-22 14:25:29 INFO  c.w.u.LogUtil [main]:10 - ===================================== TEST SCENARIO START | Addition of two numbers - To test failure on web =========================================
+2022-08-22 14:25:30 INFO  c.w.u.LogUtil [main]:22 - Web Browser 'chrome' launched successfully for scenario: Addition of two numbers - To test failure on web with tags [@WinApp, @WebApp, @Calculator, @addwinweb, @madetofail]
+2022-08-22 14:25:31 INFO  c.w.u.LogUtil [main]:22 - <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----- Calculator Application has launched! ----->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2022-08-22 14:25:44 INFO  c.w.u.LogUtil [main]:22 - Result saved from windows calculator app to the text file as: Display is 7
+2022-08-22 14:25:58 INFO  c.w.u.LogUtil [main]:22 - Screenshot of Test failure is attached
+2022-08-22 14:26:00 INFO  c.w.u.LogUtil [main]:22 - Windows Application has been closed
+2022-08-22 14:26:02 INFO  c.w.u.LogUtil [main]:22 - Web Browser has been closed
+2022-08-22 14:26:02 INFO  c.w.u.LogUtil [main]:14 - ===================================== TEST SCENARIO END | Addition of two numbers - To test failure on web =========================================
+2022-08-22 14:26:02 INFO  c.w.u.LogUtil [main]:17 - ===================================== TEST SCENARIO STATUS | FAILED =========================================
+2022-08-22 14:26:02 INFO  c.w.u.LogUtil [main]:22 - Screen recording of test run is successful.
+2022-08-22 14:26:04 INFO  c.w.u.LogUtil [main]:22 - Windows Application Driver has successfully shutdown!

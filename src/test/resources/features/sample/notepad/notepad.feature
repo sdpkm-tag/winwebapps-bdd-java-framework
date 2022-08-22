@@ -1,4 +1,4 @@
-@Notepad @winapps
+@WinApp @Notepad
 Feature: This is to test Notepad features
   Sample user story details (As a ...., I want to ...., So that .... ), JIRA ticket references etc can be provided her
 

@@ -1,4 +1,4 @@
-@Calculator @winapps
+@WinApp @Calculator
 Feature: This is to test calculation feature of the Windows Calculator App
 Sample user story details (As a ...., I want to ...., So that .... ), JIRA ticket references etc can be provided here
 

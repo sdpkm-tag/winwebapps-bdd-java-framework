@@ -2,6 +2,8 @@ package com.winapps.stepdefs.sample.calculator;
 
 import com.winapps.pageobjects.sample.calculator.StandardCalculatorScreen;
 import com.winapps.factory.DriverFactory;
+import com.winapps.utils.Helper;
+import com.winapps.utils.LogUtil;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -56,11 +58,14 @@ public class StandardCalcStepDefinitions {
 
     @Then("<output> should be displayed on the result screen")
     @Then("{string} should be displayed on the result screen")
-    public void shouldBeDisplayedOnTheResultScreen(String expectedResult) throws InterruptedException {
+    public void shouldBeDisplayedOnTheResultScreen(String expectedResult) throws Throwable {
         Thread.sleep(2000);
         String actualResult = standardCalculatorScreen.getCalculatorResultsValue();
-        String errorMessage = "Expected value of element is 'Display is "+expectedResult+"' but actual value of element is '"+actualResult+"'";
-        Assert.assertTrue("Values don't match: "+errorMessage, actualResult.contains(expectedResult));
+        Helper.saveDataInATextFile(actualResult, "calresult.txt");
+        LogUtil.info("Result saved from windows calculator app to the text file as: " + actualResult);
+        String errorMessage = "Expected value of element is 'Display is " + expectedResult + "' but actual value of element is '" + actualResult + "'";
+        Assert.assertTrue("Values don't match: " + errorMessage, actualResult.contains(expectedResult));
+        DriverFactory.winApp.quit();
     }
 
     @Given("I have keyed {string} into the calculator")

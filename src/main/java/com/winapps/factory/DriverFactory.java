@@ -2,6 +2,7 @@ package com.winapps.factory;
 
 import com.winapps.utils.ConfigFileReader;
 import com.winapps.utils.FileCleanser;
+import com.winapps.utils.LogUtil;
 import io.appium.java_client.windows.WindowsDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -11,12 +12,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.safari.SafariDriver;
 
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.sql.Driver;
+import java.sql.Time;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -32,27 +32,29 @@ public class DriverFactory {
     public static WindowsDriver winApp;
     public static WebDriver webApp;
 
+    private static Process wadProcess;
+
     public static ThreadLocal<WebDriver> threadLocal = new ThreadLocal<>();
 
     public void startWinAppDriver() throws IOException, InterruptedException {
-        //TODO Write code for staring winAppDriver and call this method to be used in hooks to run before all tests are run for winapps.
-        //TODO Implement logging of WinApDriver run to printed out in a target file.
 
         //Start of WinAppDriver
-//        String wadExeFilePath = cfgReader.readProperty().getProperty("wad_exefile_path");
-//        String wadLogFilePath = cfgReader.readProperty().getProperty("wad_logfile_path");
         String wadBatFilePath = cfgReader.readProperty().getProperty("wad_batfile_path");
-//        String[] command = {wadExeFilePath, ">", wadLogFilePath};
         try {
             ProcessBuilder processBuilder = new ProcessBuilder(wadBatFilePath);
-//            ProcessBuilder processBuilder = new ProcessBuilder(command); // Run by passing explicit commands - Use of Powershell, bash or cmd.exe (command string built by using above example)
             processBuilder.inheritIO();
-            Process wadProcess = processBuilder.start();
-            System.out.println("Windows Application Driver has started");
-        } catch (IOException e) {
+            wadProcess = processBuilder.start();
+            wadProcess.waitFor(Long.parseLong(prop.getProperty("wad_startup_wait")), TimeUnit.MILLISECONDS);
+            if (wadProcess.isAlive()) {
+                LogUtil.info("Windows Application Driver has successfully started and running in the background!");
+            } else {
+                LogUtil.error("Windows Application Driver failed to start!");
+            }
+        } catch (
+                IOException e) {
             e.printStackTrace();
-
         }
+
     }
 
     /**
@@ -64,27 +66,27 @@ public class DriverFactory {
     public WindowsDriver startWinAppSession(String app_Id) {
 
         String appId = prop.getProperty(app_Id);
+        String wadUrl = prop.getProperty("wad_protocol") + "://" + prop.getProperty("wad_host_ip") + ":" + prop.getProperty("wad_port") + "/wd/hub";
         DesiredCapabilities descap = new DesiredCapabilities();
         descap.setCapability("app", appId);
         descap.setCapability("platformName", "Windows");
         descap.setCapability("deviceName", "WindowsPC");
 
         try {
-            winApp = new WindowsDriver(new URL("http://127.0.0.1:4723/"), descap);
+            winApp = new WindowsDriver(new URL(wadUrl), descap);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        winApp.manage().timeouts().implicitlyWait(Long.parseLong(prop.getProperty("implicit_wait_time")),TimeUnit.MILLISECONDS);
+        winApp.manage().timeouts().implicitlyWait(Long.parseLong(prop.getProperty("implicit_wait_time")), TimeUnit.MILLISECONDS);
         winApp.manage().window().maximize();
         return winApp;
     }
 
     public void closeWinAppDriver() throws IOException, InterruptedException {
         //TODO Write code for closing winAppDriver and call this method to be used in hooks to run as teardown after all tests are run for winapps
-        Thread.sleep(Long.parseLong(prop.getProperty("wad_closedown_wait"))); // Make it configurable, if needed
+        Thread.sleep(Long.parseLong(prop.getProperty("wad_closedown_wait"))); // Configurable static wait time
         Runtime.getRuntime().exec("taskkill /F /IM WinAppDriver.exe");
-        System.out.println("\nWindows Application Driver has shut down");
-
+        LogUtil.info("Windows Application Driver has successfully shutdown!");
     }
 
     public void cleanWadLogFile() throws InterruptedException {
@@ -95,25 +97,30 @@ public class DriverFactory {
         System.out.println("WindowsApplication Log file is available");
     }
 
-    public WebDriver startWebDriver(String browserName) {
+    public WebDriver startWebBrowserDriver(String browserName) {
         //TODO Following code might need impacting and tweaking against version of browsers available on test machine. Change could be to use local drivers set-up (example shown commented out below)
 
         System.out.println("Selected browser is: " + browserName);
         if (browserName.equals("chrome")) {
             WebDriverManager.chromedriver().setup();
-            threadLocal.set(new ChromeDriver());
+            webApp = new ChromeDriver();
+//            threadLocal.set(new ChromeDriver());
         } else if (browserName.equals("firefox")) {
             WebDriverManager.firefoxdriver().setup();
-            threadLocal.set(new FirefoxDriver());
+            webApp = new FirefoxDriver();
+//            threadLocal.set(new FirefoxDriver());
         } else if (browserName.equals("internetexplorer")) {
             WebDriverManager.iedriver().setup();
-            threadLocal.set(new InternetExplorerDriver());
+            webApp = new InternetExplorerDriver();
+//            threadLocal.set(new InternetExplorerDriver());
         } else if (browserName.equals("opera")) {
             WebDriverManager.operadriver().setup();
-            threadLocal.set(new OperaDriver());
+            webApp = new OperaDriver();
+//            threadLocal.set(new OperaDriver());
         } else if (browserName.equals("edge")) {
             WebDriverManager.edgedriver().setup();
-            threadLocal.set(new EdgeDriver());
+            webApp = new EdgeDriver();
+//            threadLocal.set(new EdgeDriver());
         } else {
             System.out.println("Please pass the correct browser value. " + browserName + " is not correct value chosen or configured.");
         }
@@ -130,21 +137,17 @@ public class DriverFactory {
 //            System.out.println("Please pass the correct browser value. " + browserName + " is not correct value chosen or configured.");
 //        }
 
-        getWebDriver().manage().deleteAllCookies();
-        getWebDriver().manage().window().maximize();
-        return getWebDriver();
+//        getWebDriver().manage().deleteAllCookies();
+//        getWebDriver().manage().window().maximize();
+//        return getWebDriver();
+        webApp.manage().deleteAllCookies();
+        webApp.manage().window().maximize();
+        return webApp;
     }
 
     public static synchronized WebDriver getWebDriver() {
         //TODO Following code might need impacting and tweaking against version of browsers available on test machine
         return threadLocal.get();
-    }
-
-    public void launchWebBrowser() {
-        // FIXME to be correctly implemented when webbrowser session is to be launched in the same session of scenario running steps with Window Applications first.
-        String browserName = prop.getProperty("browser");
-        DriverFactory driverFactory = new DriverFactory();
-        driverFactory.startWebDriver(browserName);
     }
 
 }

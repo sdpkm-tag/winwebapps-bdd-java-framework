@@ -3,6 +3,7 @@ package com.winapps.utils;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Calendar;
+import java.util.Properties;
 
 import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -12,6 +13,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+
 public class ExcelUtil {
     public String path;
     public FileInputStream fileInputStream = null;
@@ -20,6 +22,9 @@ public class ExcelUtil {
     private XSSFSheet sheet = null;
     private XSSFRow row = null;
     private XSSFCell cell = null;
+
+    private static final ConfigFileReader cfgReader = new ConfigFileReader();
+    private static final Properties prop = cfgReader.readProperty();
 
     public ExcelUtil(String path) {
 
@@ -393,7 +398,9 @@ public class ExcelUtil {
 
     public static void main(String[] args) {
         // FIXME Remove this code once ready for implementation in final framework
-        ExcelUtil reader = new ExcelUtil("./src/test/resources/runtimecache/SampleExcel.xlsx");
+        // Use below as example code
+        String filePath = prop.getProperty("excel_file_path");
+        ExcelUtil reader = new ExcelUtil(filePath);
         String sheetName = "login";
 
         System.out.println(reader.getCellData(sheetName, "username", 3));

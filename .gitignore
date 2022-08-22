@@ -7,4 +7,4 @@
 */.DS_Store
 /test-output/screen-recordings/*
 /driver
-#/src/test/resources/runtimecache/*
+#/src/test/resources/testdatacache/*
