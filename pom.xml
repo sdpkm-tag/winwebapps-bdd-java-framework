@@ -3,12 +3,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>groupId</groupId>
   <artifactId>winapps-bdd-java-framework</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.3</version>
   <name>WinAppps Test Framework</name>
   <description>Test Automation Framework for Multiple Windows Applications using WinAppDriver</description>
   <organization>
-    <name></name>
-    <url></url>
+    <name />
+    <url />
   </organization>
   <developers>
     <developer>
@@ -17,11 +17,11 @@
       <url>https://github.com/dee-sdpkm</url>
     </developer>
   </developers>
-  <contributors></contributors>
+  <contributors />
   <scm>
     <connection>scm:git:git@github.com:dee-sdpkm/winapps-bdd-java-framework.git</connection>
     <developerConnection>scm:git:git@github.com:dee-sdpkm/winapps-bdd-java-framework.git</developerConnection>
-    <tag>v_@{project.version}</tag>
+    <tag>v_0.0.3</tag>
     <url>https://github.com/dee-sdpkm/winapps-bdd-java-framework</url>
   </scm>
   <properties>
