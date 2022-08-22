@@ -66,13 +66,14 @@ public class DriverFactory {
     public WindowsDriver startWinAppSession(String app_Id) {
 
         String appId = prop.getProperty(app_Id);
+        String wadUrl = prop.getProperty("wad_protocol") + "://" + prop.getProperty("wad_host_ip") + ":" + prop.getProperty("wad_port") + "/wd/hub";
         DesiredCapabilities descap = new DesiredCapabilities();
         descap.setCapability("app", appId);
         descap.setCapability("platformName", "Windows");
         descap.setCapability("deviceName", "WindowsPC");
 
         try {
-            winApp = new WindowsDriver(new URL("http://127.0.0.1:4723/"), descap);
+            winApp = new WindowsDriver(new URL(wadUrl), descap);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }

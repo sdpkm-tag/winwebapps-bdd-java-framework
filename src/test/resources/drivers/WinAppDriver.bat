@@ -6,4 +6,4 @@ set "HH=%dt:~8,2%" & set "Min=%dt:~10,2%" & set "Sec=%dt:~12,2%"
 
 set "datestamp=%YYYY%%MM%%DD%" & set "timestamp=%HH%%Min%%Sec%"
 set "fullstamp=%YYYY%-%MM%-%DD%_%HH%-%Min%-%Sec%"
-C:\wad\WinAppDriver.exe > test-output\logs\WinAppDriverOutput.log
+C:\wad\WinAppDriver.exe 4723/wd/hub > test-output\logs\WinAppDriverOutput.log
