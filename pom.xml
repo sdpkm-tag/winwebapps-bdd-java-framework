@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>groupId</groupId>
-  <artifactId>winapps-bdd-java-framework</artifactId>
+  <artifactId>winwebapps-bdd-java-framework</artifactId>
   <version>0.0.4-SNAPSHOT</version>
-  <name>WinAppps Test Framework</name>
-  <description>Test Automation Framework for Multiple Windows Applications using WinAppDriver</description>
+  <name>Windows and Web Appps Test Framework</name>
+  <description>Test Automation Framework for Multiple Windows and Web Applications using WinAppDriver and Selenium</description>
   <organization>
     <name />
     <url />
@@ -19,10 +19,10 @@
   </developers>
   <contributors />
   <scm>
-    <connection>scm:git:git@github.com:dee-sdpkm/winapps-bdd-java-framework.git</connection>
-    <developerConnection>scm:git:git@github.com:dee-sdpkm/winapps-bdd-java-framework.git</developerConnection>
+    <connection>scm:git:git@github.com:dee-sdpkm/winwebapps-bdd-java-framework.git</connection>
+    <developerConnection>scm:git:git@github.com:dee-sdpkm/winwebapps-bdd-java-framework.git</developerConnection>
     <tag>v_@{project.version}</tag>
-    <url>https://github.com/dee-sdpkm/winapps-bdd-java-framework</url>
+    <url>https://github.com/dee-sdpkm/winwebapps-bdd-java-framework</url>
   </scm>
   <properties>
     <apache.commons.io.version>2.11.0</apache.commons.io.version>
@@ -176,7 +176,7 @@
           <!--          <generatedHtmlReportDirectory>${project.build.directory}/test-output/cluecumber-report</generatedHtmlReportDirectory>-->
           <generatedHtmlReportDirectory>test-output/cluecumber-report</generatedHtmlReportDirectory>
           <expandAttachments>true</expandAttachments>
-          <customPageTitle>WinApps Functional Test Report</customPageTitle>
+          <customPageTitle>Functional Test Report for Windows and Web Apps</customPageTitle>
           <expandBeforeAfterHooks>true</expandBeforeAfterHooks>
           <expandStepHooks>true</expandStepHooks>
           <startPage>ALL_FEATURES</startPage>
@@ -221,12 +221,12 @@
           <!--            team-release::default::http://gmrepo:8678/nexus-webapp/content/repositories/ebcm-releases/-->
           <!--          </stagingrepository>-->
           <!--          <connectionUrl>-->
-          <!--            scm:git@github.com:dee-sdpkm/winapps-bdd-java-framework.git-->
+          <!--            scm:git@github.com:dee-sdpkm/winwebapps-bdd-java-framework.git-->
           <!--          </connectionUrl>-->
           <!--          <autoVersionSubmodules>true</autoVersionSubmodules>-->
           <!--          <updateBranchVersions>true</updateBranchVersions>-->
           <!--&lt;!&ndash;          <updateWorkingCopyVersions>true</updateWorkingCopyVersions>&ndash;&gt;-->
-          <!--          <tagBase>git@github.com:dee-sdpkm/winapps-bdd-java-framework.git</tagBase>-->
+          <!--          <tagBase>git@github.com:dee-sdpkm/winwebapps-bdd-java-framework.git</tagBase>-->
         </configuration>
         <!--        <dependencies>-->
         <!--          <dependency>-->
