@@ -1,5 +1,5 @@
 # winapps-bdd-java-framework
-A BDD based Test Framework for Testing multip Windows Apps using WinAppDriver, Selenium, Appium, Cucumber and Java. 
+A BDD based Test Framework for Testing multiple Windows Apps using WinAppDriver, Selenium, Appium, Cucumber and Java. 
 
 ## Key tools used
 - Java - JDK 8+
