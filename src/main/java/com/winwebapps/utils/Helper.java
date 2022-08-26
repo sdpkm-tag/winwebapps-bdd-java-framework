@@ -1,23 +1,26 @@
 package com.winwebapps.utils;
 
 import com.mifmif.common.regex.Generex;
+import org.apache.commons.io.FileUtils;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.FileReader;
+import java.io.*;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Date;
+import java.util.Properties;
 import java.util.Random;
 
 import static com.winwebapps.utils.ConfigFileReader.properties;
 
+
 public class Helper {
+
+    private static final ConfigFileReader cfgReader = new ConfigFileReader();
+    private static final Properties prop = cfgReader.readProperty();
 
     //public static String currentSite;
     static String absPath = new File("").getAbsolutePath().toString();
-    static String filePath = absPath + properties.getProperty("text_file_dir_path");
+    static String filePath = absPath + prop.getProperty("text_file_dir_path");
 
     // Save data in a text file - Cache
     public static void saveDataInATextFile(String id, String fileName) throws Throwable {
@@ -54,7 +57,7 @@ public class Helper {
     }
 
     public static String getInsertScript(String fileName) throws Throwable {
-        String filePath = absPath + "\\src\\test\\java\\com\\winwebapps\\...\\...\\...\\configurations\\";
+        String filePath = absPath + "/src/test/java/com/winwebapps/.../.../.../configurations/";
         BufferedReader br = new BufferedReader(new FileReader(filePath.concat(fileName)));
         try {
             StringBuilder sb = new StringBuilder();
@@ -93,7 +96,7 @@ public class Helper {
     }
 
     // Get date in a specific Format
-    public String getDateInSpecificFormat(String dateFormat) {
+    public static String getDateInSpecificFormat(String dateFormat) {
         Date dateInSpecificFormat = new Date();
         SimpleDateFormat ft = new SimpleDateFormat(dateFormat);
         return ft.format(dateInSpecificFormat);
@@ -132,13 +135,47 @@ public class Helper {
         return randomStr;
     }
 
+    /**
+     * This method will take a filepath or directory path and rename it with required fixed text string and date-timestamp. Limitations are it currently only deals with filepaths without file extensions and works for directories (folders). This is to be improved in future.
+     *
+     * @param filePathOrDirectory Takes file path or directory (folder path)
+     * @param dateTimeStampFormat takes custom date time stamp provided by caller
+     * @param fixedNameToInclude  takes a string text which can form part of the renamed file / folder
+     * @param fileExtension       adds any extension to the file (provided not already included in the input file being renamed).
+     */
+    public static void renameFileOrFilePathWithDateTimeStamp(String filePathOrDirectory, String dateTimeStampFormat, String fixedNameToInclude, String fileExtension) {
+        File inputFilePathOrDirectory = new File(filePathOrDirectory);
+        String timeStampValue = getDateInSpecificFormat(dateTimeStampFormat);
+
+        if (inputFilePathOrDirectory.exists()) {
+            inputFilePathOrDirectory.renameTo(new File(inputFilePathOrDirectory + fixedNameToInclude + "_" + timeStampValue + fileExtension));
+        } else {
+            LogUtil.warn("This file or directory doesn't exist! : " + inputFilePathOrDirectory);
+        }
+    }
+
+    /**
+     * This utility uses Apache Commons FileUtils class and deletes a directory when its name or path is passed on by calling method.
+     *
+     * @param directoryToBeDeleted : name or path of directory to be deleted
+     * @throws IOException
+     */
+    public static void deleteDirectory(String directoryToBeDeleted) throws IOException {
+        if (new File(directoryToBeDeleted).exists()) {
+            FileUtils.deleteDirectory(new File(directoryToBeDeleted));
+            LogUtil.info("Directory or folder path'" + directoryToBeDeleted + "' has been deleted successfully!");
+        } else {
+            LogUtil.warn("Directory or folder path '" + directoryToBeDeleted + "' not found!");
+        }
+    }
+
     public static String getRandomNINO() {
         Generex generex = new Generex("[A-CEGHJ-PR-TW-Z]{1}[A-CEGHJ-NPR-TW-Z]{1}[0-9]{6}[A-DFM]{0,1}");
         String randomNino = generex.random();
         return randomNino;
     }
 
-    // Below only used for testing the various methods in above code and can be referred as example
+    // Below only used for testing the various methods in above code and can be referred as example during implementation
     // FIXME Remove this code once ready for implementation in final framework
     public static void main(String[] args) throws Throwable {
         Helper helper = new Helper();
@@ -153,6 +190,12 @@ public class Helper {
         System.out.println("Data saved in text file is: " + getDataFromSavedTextFile("testfile.txt"));
         System.out.println(helper.getDateInSpecificFormat("yyyyMMdd-HHmmss"));
 
+        String pathToBeDeleted = System.getProperty("user.home") + properties.getProperty("winapp_local_cache_path");
+        if (new File(pathToBeDeleted).exists()) {
+            Helper.deleteDirectory(pathToBeDeleted);
+            LogUtil.info("Application cache has been cleared!");
+        } else {
+            LogUtil.warn("Application cache is not cleared!");
+        }
     }
-
 }
