@@ -1,0 +1,3945 @@
+Windows Application Driver listening for requests at: http://127.0.0.1:4723/wd/hub
+Press ENTER to exit.
+==========================================
+POST /wd/hub/session HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 369
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+X-Idempotency-Key: 4de1e030-7d75-4738-a404-5507cb4534d9
+{
+  "desiredCapabilities": {
+    "app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+    "platformName": "Windows",
+    "deviceName": "WindowsPC"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "appium:app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+        "appium:deviceName": "WindowsPC",
+        "platformName": "windows"
+      }
+    ]
+  }
+}
+HTTP/1.1 200 OK
+Content-Length: 152
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0,"value":{"app":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App","platformName":"Windows"}}
+==========================================
+POST /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D/timeouts HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "type": "implicit",
+  "ms": 10000
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0}
+==========================================
+POST /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D/window/current/maximize HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 54
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "windowHandle": "current",
+  "handle": "current"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0}
+==========================================
+POST /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Two"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0,"value":{"ELEMENT":"42.6754974.4.61"}}
+==========================================
+POST /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D/element/42.6754974.4.61/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 29
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.6754974.4.61"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0}
+==========================================
+POST /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Zero"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0,"value":{"ELEMENT":"42.6754974.4.21"}}
+==========================================
+POST /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D/element/42.6754974.4.21/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 29
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.6754974.4.21"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0}
+==========================================
+POST /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Plus"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0,"value":{"ELEMENT":"42.6754974.4.54"}}
+==========================================
+POST /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D/element/42.6754974.4.54/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 29
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.6754974.4.54"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0}
+==========================================
+POST /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Three"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0,"value":{"ELEMENT":"42.6754974.4.63"}}
+==========================================
+POST /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D/element/42.6754974.4.63/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 29
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.6754974.4.63"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0}
+==========================================
+POST /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Zero"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0,"value":{"ELEMENT":"42.6754974.4.21"}}
+==========================================
+POST /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D/element/42.6754974.4.21/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 29
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.6754974.4.21"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0}
+==========================================
+POST /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 42
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Equals"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0,"value":{"ELEMENT":"42.6754974.4.56"}}
+==========================================
+POST /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D/element/42.6754974.4.56/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 29
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.6754974.4.56"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0}
+==========================================
+POST /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 85
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "xpath",
+  "value": "\u002f\u002f*[starts-with(@Name, 'Display is ')]"
+}
+HTTP/1.1 200 OK
+Content-Length: 100
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0,"value":{"ELEMENT":"42.6754974.4.9"}}
+==========================================
+GET /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D/element/42.6754974.4.9/text HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 87
+Content-Type: application/json
+{"sessionId":"ABC05C96-B6BC-453C-82BE-BFE08DF5E14D","status":0,"value":"Display is 50"}
+==========================================
+DELETE /wd/hub/session/ABC05C96-B6BC-453C-82BE-BFE08DF5E14D HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 0
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 12
+Content-Type: application/json
+{"status":0}
+==========================================
+POST /wd/hub/session HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 369
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+X-Idempotency-Key: e55ddec9-fb40-40ad-bd36-69758913097b
+{
+  "desiredCapabilities": {
+    "app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+    "platformName": "Windows",
+    "deviceName": "WindowsPC"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "appium:app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+        "appium:deviceName": "WindowsPC",
+        "platformName": "windows"
+      }
+    ]
+  }
+}
+HTTP/1.1 200 OK
+Content-Length: 152
+Content-Type: application/json
+{"sessionId":"E3C96D3B-24E0-4959-BA1D-F89F4BB3274C","status":0,"value":{"app":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App","platformName":"Windows"}}
+==========================================
+POST /wd/hub/session/E3C96D3B-24E0-4959-BA1D-F89F4BB3274C/timeouts HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "type": "implicit",
+  "ms": 10000
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"E3C96D3B-24E0-4959-BA1D-F89F4BB3274C","status":0}
+==========================================
+POST /wd/hub/session/E3C96D3B-24E0-4959-BA1D-F89F4BB3274C/window/current/maximize HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 54
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "windowHandle": "current",
+  "handle": "current"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"E3C96D3B-24E0-4959-BA1D-F89F4BB3274C","status":0}
+==========================================
+POST /wd/hub/session/E3C96D3B-24E0-4959-BA1D-F89F4BB3274C/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Two"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"E3C96D3B-24E0-4959-BA1D-F89F4BB3274C","status":0,"value":{"ELEMENT":"42.74059866.4.64"}}
+==========================================
+POST /wd/hub/session/E3C96D3B-24E0-4959-BA1D-F89F4BB3274C/element/42.74059866.4.64/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.74059866.4.64"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"E3C96D3B-24E0-4959-BA1D-F89F4BB3274C","status":0}
+==========================================
+POST /wd/hub/session/E3C96D3B-24E0-4959-BA1D-F89F4BB3274C/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 47
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Multiply by"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"E3C96D3B-24E0-4959-BA1D-F89F4BB3274C","status":0,"value":{"ELEMENT":"42.74059866.4.53"}}
+==========================================
+POST /wd/hub/session/E3C96D3B-24E0-4959-BA1D-F89F4BB3274C/element/42.74059866.4.53/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.74059866.4.53"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"E3C96D3B-24E0-4959-BA1D-F89F4BB3274C","status":0}
+==========================================
+POST /wd/hub/session/E3C96D3B-24E0-4959-BA1D-F89F4BB3274C/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Five"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"E3C96D3B-24E0-4959-BA1D-F89F4BB3274C","status":0,"value":{"ELEMENT":"42.74059866.4.70"}}
+==========================================
+POST /wd/hub/session/E3C96D3B-24E0-4959-BA1D-F89F4BB3274C/element/42.74059866.4.70/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.74059866.4.70"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"E3C96D3B-24E0-4959-BA1D-F89F4BB3274C","status":0}
+==========================================
+POST /wd/hub/session/E3C96D3B-24E0-4959-BA1D-F89F4BB3274C/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 42
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Equals"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"E3C96D3B-24E0-4959-BA1D-F89F4BB3274C","status":0,"value":{"ELEMENT":"42.74059866.4.59"}}
+==========================================
+POST /wd/hub/session/E3C96D3B-24E0-4959-BA1D-F89F4BB3274C/element/42.74059866.4.59/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.74059866.4.59"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"E3C96D3B-24E0-4959-BA1D-F89F4BB3274C","status":0}
+==========================================
+POST /wd/hub/session/E3C96D3B-24E0-4959-BA1D-F89F4BB3274C/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 85
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "xpath",
+  "value": "\u002f\u002f*[starts-with(@Name, 'Display is ')]"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"E3C96D3B-24E0-4959-BA1D-F89F4BB3274C","status":0,"value":{"ELEMENT":"42.74059866.4.1"}}
+==========================================
+GET /wd/hub/session/E3C96D3B-24E0-4959-BA1D-F89F4BB3274C/element/42.74059866.4.1/text HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 87
+Content-Type: application/json
+{"sessionId":"E3C96D3B-24E0-4959-BA1D-F89F4BB3274C","status":0,"value":"Display is 10"}
+==========================================
+GET /wd/hub/session/E3C96D3B-24E0-4959-BA1D-F89F4BB3274C/screenshot HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 2621982
+Content-Type: application/json
++ZA5kDn/Q/jsmi+ea+yp8pN/n4jY2YlCw56F1yZOWSPwJmoA6GAqVgmAMJQQTSkKh3XKHRpLTiKo3+gTiCLxVr9DyG4QikA+FXH2VANJ3IenTlCnxNR4L1XxbSsROxcnpbNYKCrCjSgVJSpjv2VqiQpRJQWbokhUByexQ3jLgTpoq93jcPIhovwk3oo9VX7y7xMROztRaNiz8NrEKWsEd+cfXie4O/8tB+qgrXaPw8mHiPKTeCv2VPnJv09E7OxEoWHPwmsTp6wR3J1/eJ3g7vy3HKiDtto9DicfIspP4q3YU+Un/z4RsbMThYY9C69NnLJG8Ov2/Ktw+UZLwP3j7yflbbBJyfUTzeLvm3x7BJ0X5ZpDnFTIa6A5USfwPU6X59SmHE6DLMlaI1kUSny/0/XvNtBJEe1viiERTq2TkgWmbFWPBgjQ [...]
+==========================================
+DELETE /wd/hub/session/E3C96D3B-24E0-4959-BA1D-F89F4BB3274C HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 0
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 12
+Content-Type: application/json
+{"status":0}
+==========================================
+POST /wd/hub/session HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 369
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+X-Idempotency-Key: 0ab425fb-10be-45a7-a398-3b55cb2494fa
+{
+  "desiredCapabilities": {
+    "app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+    "platformName": "Windows",
+    "deviceName": "WindowsPC"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "appium:app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+        "appium:deviceName": "WindowsPC",
+        "platformName": "windows"
+      }
+    ]
+  }
+}
+HTTP/1.1 200 OK
+Content-Length: 152
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0,"value":{"app":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App","platformName":"Windows"}}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/timeouts HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "type": "implicit",
+  "ms": 10000
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/window/current/maximize HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 54
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "windowHandle": "current",
+  "handle": "current"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "One"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0,"value":{"ELEMENT":"42.74584154.4.59"}}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/element/42.74584154.4.59/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.74584154.4.59"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Zero"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0,"value":{"ELEMENT":"42.74584154.4.21"}}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/element/42.74584154.4.21/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.74584154.4.21"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Zero"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0,"value":{"ELEMENT":"42.74584154.4.21"}}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/element/42.74584154.4.21/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.74584154.4.21"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 45
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Divide by"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0,"value":{"ELEMENT":"42.74584154.4.19"}}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/element/42.74584154.4.19/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.74584154.4.19"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Four"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0,"value":{"ELEMENT":"42.74584154.4.65"}}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/element/42.74584154.4.65/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.74584154.4.65"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Zero"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0,"value":{"ELEMENT":"42.74584154.4.21"}}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/element/42.74584154.4.21/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.74584154.4.21"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 42
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Equals"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0,"value":{"ELEMENT":"42.74584154.4.56"}}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/element/42.74584154.4.56/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.74584154.4.56"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0}
+==========================================
+POST /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 85
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "xpath",
+  "value": "\u002f\u002f*[starts-with(@Name, 'Display is ')]"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0,"value":{"ELEMENT":"42.74584154.4.9"}}
+==========================================
+GET /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C/element/42.74584154.4.9/text HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json
+{"sessionId":"AE3E81D3-A839-4547-8266-27A554AA628C","status":0,"value":"Display is 2.5"}
+==========================================
+DELETE /wd/hub/session/AE3E81D3-A839-4547-8266-27A554AA628C HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 0
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 12
+Content-Type: application/json
+{"status":0}
+==========================================
+POST /wd/hub/session HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 369
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+X-Idempotency-Key: adcbd2a5-0b04-4c9b-adc6-f558e8cfcd5d
+{
+  "desiredCapabilities": {
+    "app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+    "platformName": "Windows",
+    "deviceName": "WindowsPC"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "appium:app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+        "appium:deviceName": "WindowsPC",
+        "platformName": "windows"
+      }
+    ]
+  }
+}
+HTTP/1.1 200 OK
+Content-Length: 152
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":{"app":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App","platformName":"Windows"}}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/timeouts HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "type": "implicit",
+  "ms": 10000
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/window/current/maximize HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 54
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "windowHandle": "current",
+  "handle": "current"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Six"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":{"ELEMENT":"42.25691988.4.69"}}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element/42.25691988.4.69/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.25691988.4.69"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Seven"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":{"ELEMENT":"42.25691988.4.71"}}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element/42.25691988.4.71/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.25691988.4.71"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Five"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":{"ELEMENT":"42.25691988.4.67"}}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element/42.25691988.4.67/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.25691988.4.67"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 53
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Decimal Separator"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":{"ELEMENT":"42.25691988.4.77"}}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element/42.25691988.4.77/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.25691988.4.77"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Eight"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":{"ELEMENT":"42.25691988.4.73"}}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element/42.25691988.4.73/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.25691988.4.73"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Six"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":{"ELEMENT":"42.25691988.4.69"}}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element/42.25691988.4.69/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.25691988.4.69"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Minus"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":{"ELEMENT":"42.25691988.4.52"}}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element/42.25691988.4.52/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.25691988.4.52"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Four"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":{"ELEMENT":"42.25691988.4.65"}}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element/42.25691988.4.65/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.25691988.4.65"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Six"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":{"ELEMENT":"42.25691988.4.69"}}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element/42.25691988.4.69/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.25691988.4.69"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 53
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Decimal Separator"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":{"ELEMENT":"42.25691988.4.77"}}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element/42.25691988.4.77/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.25691988.4.77"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Eight"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":{"ELEMENT":"42.25691988.4.73"}}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element/42.25691988.4.73/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.25691988.4.73"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Nine"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":{"ELEMENT":"42.25691988.4.75"}}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element/42.25691988.4.75/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.25691988.4.75"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":{"ELEMENT":"42.25691988.4.71"}}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element/42.25691988.4.71/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.25691988.4.71"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 42
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Equals"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":{"ELEMENT":"42.25691988.4.56"}}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element/42.25691988.4.56/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.25691988.4.56"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0}
+==========================================
+POST /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 85
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "xpath",
+  "value": "\u002f\u002f*[starts-with(@Name, 'Display is ')]"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":{"ELEMENT":"42.25691988.4.9"}}
+==========================================
+GET /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E/element/42.25691988.4.9/text HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 92
+Content-Type: application/json
+{"sessionId":"609B8817-6C08-45F3-AC97-35BDDADB415E","status":0,"value":"Display is 628.963"}
+==========================================
+DELETE /wd/hub/session/609B8817-6C08-45F3-AC97-35BDDADB415E HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 0
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 12
+Content-Type: application/json
+{"status":0}
+==========================================
+POST /wd/hub/session HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 369
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+X-Idempotency-Key: 8bfc4c19-49ba-44da-ae18-d98d4fd075c9
+{
+  "desiredCapabilities": {
+    "app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+    "platformName": "Windows",
+    "deviceName": "WindowsPC"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "appium:app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+        "appium:deviceName": "WindowsPC",
+        "platformName": "windows"
+      }
+    ]
+  }
+}
+HTTP/1.1 200 OK
+Content-Length: 152
+Content-Type: application/json
+{"sessionId":"A31B74A2-0432-464B-8974-5C16F5B4B648","status":0,"value":{"app":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App","platformName":"Windows"}}
+==========================================
+POST /wd/hub/session/A31B74A2-0432-464B-8974-5C16F5B4B648/timeouts HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "type": "implicit",
+  "ms": 10000
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A31B74A2-0432-464B-8974-5C16F5B4B648","status":0}
+==========================================
+POST /wd/hub/session/A31B74A2-0432-464B-8974-5C16F5B4B648/window/current/maximize HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 54
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "windowHandle": "current",
+  "handle": "current"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A31B74A2-0432-464B-8974-5C16F5B4B648","status":0}
+==========================================
+POST /wd/hub/session/A31B74A2-0432-464B-8974-5C16F5B4B648/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 60
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Standard Calculator mode"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"A31B74A2-0432-464B-8974-5C16F5B4B648","status":0,"value":{"ELEMENT":"42.14160622.4.4"}}
+==========================================
+GET /wd/hub/session/A31B74A2-0432-464B-8974-5C16F5B4B648/element/42.14160622.4.4/attribute/Name HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 98
+Content-Type: application/json
+{"sessionId":"A31B74A2-0432-464B-8974-5C16F5B4B648","status":0,"value":"Standard Calculator mode"}
+==========================================
+POST /wd/hub/session/A31B74A2-0432-464B-8974-5C16F5B4B648/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A31B74A2-0432-464B-8974-5C16F5B4B648","status":0,"value":{"ELEMENT":"42.14160622.4.63"}}
+==========================================
+POST /wd/hub/session/A31B74A2-0432-464B-8974-5C16F5B4B648/element/42.14160622.4.63/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.14160622.4.63"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A31B74A2-0432-464B-8974-5C16F5B4B648","status":0}
+==========================================
+POST /wd/hub/session/A31B74A2-0432-464B-8974-5C16F5B4B648/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 45
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Divide by"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A31B74A2-0432-464B-8974-5C16F5B4B648","status":0,"value":{"ELEMENT":"42.14160622.4.19"}}
+==========================================
+POST /wd/hub/session/A31B74A2-0432-464B-8974-5C16F5B4B648/element/42.14160622.4.19/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.14160622.4.19"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A31B74A2-0432-464B-8974-5C16F5B4B648","status":0}
+==========================================
+POST /wd/hub/session/A31B74A2-0432-464B-8974-5C16F5B4B648/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Two"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A31B74A2-0432-464B-8974-5C16F5B4B648","status":0,"value":{"ELEMENT":"42.14160622.4.61"}}
+==========================================
+POST /wd/hub/session/A31B74A2-0432-464B-8974-5C16F5B4B648/element/42.14160622.4.61/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.14160622.4.61"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A31B74A2-0432-464B-8974-5C16F5B4B648","status":0}
+==========================================
+POST /wd/hub/session/A31B74A2-0432-464B-8974-5C16F5B4B648/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 42
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Equals"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A31B74A2-0432-464B-8974-5C16F5B4B648","status":0,"value":{"ELEMENT":"42.14160622.4.56"}}
+==========================================
+POST /wd/hub/session/A31B74A2-0432-464B-8974-5C16F5B4B648/element/42.14160622.4.56/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.14160622.4.56"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A31B74A2-0432-464B-8974-5C16F5B4B648","status":0}
+==========================================
+POST /wd/hub/session/A31B74A2-0432-464B-8974-5C16F5B4B648/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 85
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "xpath",
+  "value": "\u002f\u002f*[starts-with(@Name, 'Display is ')]"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"A31B74A2-0432-464B-8974-5C16F5B4B648","status":0,"value":{"ELEMENT":"42.14160622.4.9"}}
+==========================================
+GET /wd/hub/session/A31B74A2-0432-464B-8974-5C16F5B4B648/element/42.14160622.4.9/text HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json
+{"sessionId":"A31B74A2-0432-464B-8974-5C16F5B4B648","status":0,"value":"Display is 1.5"}
+==========================================
+DELETE /wd/hub/session/A31B74A2-0432-464B-8974-5C16F5B4B648 HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 0
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 12
+Content-Type: application/json
+{"status":0}
+==========================================
+POST /wd/hub/session HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 369
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+X-Idempotency-Key: 1071d951-e115-416d-a36a-2fdcadfc0726
+{
+  "desiredCapabilities": {
+    "app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+    "platformName": "Windows",
+    "deviceName": "WindowsPC"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "appium:app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+        "appium:deviceName": "WindowsPC",
+        "platformName": "windows"
+      }
+    ]
+  }
+}
+HTTP/1.1 200 OK
+Content-Length: 152
+Content-Type: application/json
+{"sessionId":"6C51EBEA-362E-4BF5-802F-EF283DDC8524","status":0,"value":{"app":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App","platformName":"Windows"}}
+==========================================
+POST /wd/hub/session/6C51EBEA-362E-4BF5-802F-EF283DDC8524/timeouts HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "type": "implicit",
+  "ms": 10000
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"6C51EBEA-362E-4BF5-802F-EF283DDC8524","status":0}
+==========================================
+POST /wd/hub/session/6C51EBEA-362E-4BF5-802F-EF283DDC8524/window/current/maximize HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 54
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "windowHandle": "current",
+  "handle": "current"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"6C51EBEA-362E-4BF5-802F-EF283DDC8524","status":0}
+==========================================
+POST /wd/hub/session/6C51EBEA-362E-4BF5-802F-EF283DDC8524/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 60
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Standard Calculator mode"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"6C51EBEA-362E-4BF5-802F-EF283DDC8524","status":0,"value":{"ELEMENT":"42.21959490.4.4"}}
+==========================================
+GET /wd/hub/session/6C51EBEA-362E-4BF5-802F-EF283DDC8524/element/42.21959490.4.4/attribute/Name HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 98
+Content-Type: application/json
+{"sessionId":"6C51EBEA-362E-4BF5-802F-EF283DDC8524","status":0,"value":"Standard Calculator mode"}
+==========================================
+POST /wd/hub/session/6C51EBEA-362E-4BF5-802F-EF283DDC8524/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Three"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"6C51EBEA-362E-4BF5-802F-EF283DDC8524","status":0,"value":{"ELEMENT":"42.21959490.4.63"}}
+==========================================
+POST /wd/hub/session/6C51EBEA-362E-4BF5-802F-EF283DDC8524/element/42.21959490.4.63/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.21959490.4.63"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"6C51EBEA-362E-4BF5-802F-EF283DDC8524","status":0}
+==========================================
+POST /wd/hub/session/6C51EBEA-362E-4BF5-802F-EF283DDC8524/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Plus"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"6C51EBEA-362E-4BF5-802F-EF283DDC8524","status":0,"value":{"ELEMENT":"42.21959490.4.54"}}
+==========================================
+POST /wd/hub/session/6C51EBEA-362E-4BF5-802F-EF283DDC8524/element/42.21959490.4.54/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.21959490.4.54"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"6C51EBEA-362E-4BF5-802F-EF283DDC8524","status":0}
+==========================================
+POST /wd/hub/session/6C51EBEA-362E-4BF5-802F-EF283DDC8524/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Nine"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"6C51EBEA-362E-4BF5-802F-EF283DDC8524","status":0,"value":{"ELEMENT":"42.21959490.4.75"}}
+==========================================
+POST /wd/hub/session/6C51EBEA-362E-4BF5-802F-EF283DDC8524/element/42.21959490.4.75/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.21959490.4.75"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"6C51EBEA-362E-4BF5-802F-EF283DDC8524","status":0}
+==========================================
+POST /wd/hub/session/6C51EBEA-362E-4BF5-802F-EF283DDC8524/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 42
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Equals"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"6C51EBEA-362E-4BF5-802F-EF283DDC8524","status":0,"value":{"ELEMENT":"42.21959490.4.56"}}
+==========================================
+POST /wd/hub/session/6C51EBEA-362E-4BF5-802F-EF283DDC8524/element/42.21959490.4.56/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.21959490.4.56"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"6C51EBEA-362E-4BF5-802F-EF283DDC8524","status":0}
+==========================================
+POST /wd/hub/session/6C51EBEA-362E-4BF5-802F-EF283DDC8524/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 85
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "xpath",
+  "value": "\u002f\u002f*[starts-with(@Name, 'Display is ')]"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"6C51EBEA-362E-4BF5-802F-EF283DDC8524","status":0,"value":{"ELEMENT":"42.21959490.4.9"}}
+==========================================
+GET /wd/hub/session/6C51EBEA-362E-4BF5-802F-EF283DDC8524/element/42.21959490.4.9/text HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 87
+Content-Type: application/json
+{"sessionId":"6C51EBEA-362E-4BF5-802F-EF283DDC8524","status":0,"value":"Display is 12"}
+==========================================
+DELETE /wd/hub/session/6C51EBEA-362E-4BF5-802F-EF283DDC8524 HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 0
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 12
+Content-Type: application/json
+{"status":0}
+==========================================
+POST /wd/hub/session HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 369
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+X-Idempotency-Key: c0cc6d25-0831-4253-97ef-e644049b4e52
+{
+  "desiredCapabilities": {
+    "app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+    "platformName": "Windows",
+    "deviceName": "WindowsPC"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "appium:app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+        "appium:deviceName": "WindowsPC",
+        "platformName": "windows"
+      }
+    ]
+  }
+}
+HTTP/1.1 200 OK
+Content-Length: 152
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":{"app":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App","platformName":"Windows"}}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/timeouts HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "type": "implicit",
+  "ms": 10000
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/window/current/maximize HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 54
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "windowHandle": "current",
+  "handle": "current"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 60
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Standard Calculator mode"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":{"ELEMENT":"42.15209198.4.4"}}
+==========================================
+GET /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element/42.15209198.4.4/attribute/Name HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 98
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":"Standard Calculator mode"}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Five"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":{"ELEMENT":"42.15209198.4.67"}}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element/42.15209198.4.67/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.15209198.4.67"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Six"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":{"ELEMENT":"42.15209198.4.69"}}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element/42.15209198.4.69/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.15209198.4.69"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Five"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":{"ELEMENT":"42.15209198.4.67"}}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element/42.15209198.4.67/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.15209198.4.67"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Two"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":{"ELEMENT":"42.15209198.4.61"}}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element/42.15209198.4.61/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.15209198.4.61"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Three"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":{"ELEMENT":"42.15209198.4.63"}}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element/42.15209198.4.63/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.15209198.4.63"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 47
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Multiply by"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":{"ELEMENT":"42.15209198.4.50"}}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element/42.15209198.4.50/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.15209198.4.50"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Eight"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":{"ELEMENT":"42.15209198.4.73"}}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element/42.15209198.4.73/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.15209198.4.73"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Seven"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":{"ELEMENT":"42.15209198.4.71"}}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element/42.15209198.4.71/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.15209198.4.71"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Six"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":{"ELEMENT":"42.15209198.4.69"}}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element/42.15209198.4.69/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.15209198.4.69"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 53
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Decimal Separator"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":{"ELEMENT":"42.15209198.4.77"}}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element/42.15209198.4.77/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.15209198.4.77"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Five"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":{"ELEMENT":"42.15209198.4.67"}}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element/42.15209198.4.67/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.15209198.4.67"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Nine"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":{"ELEMENT":"42.15209198.4.75"}}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element/42.15209198.4.75/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.15209198.4.75"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 42
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Equals"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":{"ELEMENT":"42.15209198.4.56"}}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element/42.15209198.4.56/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.15209198.4.56"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0}
+==========================================
+POST /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 85
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "xpath",
+  "value": "\u002f\u002f*[starts-with(@Name, 'Display is ')]"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":{"ELEMENT":"42.15209198.4.9"}}
+==========================================
+GET /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E/element/42.15209198.4.9/text HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 98
+Content-Type: application/json
+{"sessionId":"0D47CD50-4604-49DE-A1FC-0DDF50F89C2E","status":0,"value":"Display is 49,547,496.57"}
+==========================================
+DELETE /wd/hub/session/0D47CD50-4604-49DE-A1FC-0DDF50F89C2E HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 0
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 12
+Content-Type: application/json
+{"status":0}
+==========================================
+POST /wd/hub/session HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 369
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+X-Idempotency-Key: b5fea618-2150-414f-980f-8ff61ba914b3
+{
+  "desiredCapabilities": {
+    "app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+    "platformName": "Windows",
+    "deviceName": "WindowsPC"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "appium:app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+        "appium:deviceName": "WindowsPC",
+        "platformName": "windows"
+      }
+    ]
+  }
+}
+HTTP/1.1 200 OK
+Content-Length: 152
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"app":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App","platformName":"Windows"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/timeouts HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "type": "implicit",
+  "ms": 10000
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/window/current/maximize HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 54
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "windowHandle": "current",
+  "handle": "current"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 60
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Standard Calculator mode"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.4"}}
+==========================================
+GET /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.4/attribute/Name HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 98
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":"Standard Calculator mode"}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Five"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.67"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.67/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.67"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Eight"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.73"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.73/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.73"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Nine"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.75"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.75/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.75"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Seven"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.71"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.71/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.71"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Five"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.67"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.67/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.67"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Four"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.65"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.65/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.65"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Seven"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.71"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.71/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.71"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Eight"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.73"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.73/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.73"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Seven"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.71"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.71/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.71"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Eight"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.73"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.73/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.73"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Six"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.69"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.69/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.69"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Two"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.61"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.61/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.61"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Three"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.63"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.63/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.63"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Minus"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.52"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.52/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.52"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Two"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.61"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.61/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.61"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Seven"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.71"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.71/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.71"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Five"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.67"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.67/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.67"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Eight"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.73"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.73/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.73"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 53
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Decimal Separator"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.77"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.77/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.77"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Five"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.67"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.67/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.67"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Seven"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.71"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.71/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.71"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Eight"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.73"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.73/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.73"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 42
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Equals"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.56"}}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.56/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22876194.4.56"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0}
+==========================================
+POST /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 85
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "xpath",
+  "value": "\u002f\u002f*[starts-with(@Name, 'Display is ')]"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":{"ELEMENT":"42.22876194.4.9"}}
+==========================================
+GET /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1/element/42.22876194.4.9/text HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 106
+Content-Type: application/json
+{"sessionId":"A5CCB046-9DDF-492C-9421-11B5F0CDD1C1","status":0,"value":"Display is 5,897,547,875,864.422"}
+==========================================
+DELETE /wd/hub/session/A5CCB046-9DDF-492C-9421-11B5F0CDD1C1 HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 0
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 12
+Content-Type: application/json
+{"status":0}
+==========================================
+POST /wd/hub/session HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 371
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+X-Idempotency-Key: ee19e76b-9348-4df3-92f4-f3217a3014c7
+{
+  "desiredCapabilities": {
+    "app": "C:\u002fWindows\u002fSystem32\u002fnotepad.exe",
+    "platformName": "Windows",
+    "deviceName": "WindowsPC"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "appium:app": "C:\u002fWindows\u002fSystem32\u002fnotepad.exe",
+        "appium:deviceName": "WindowsPC",
+        "platformName": "windows"
+      }
+    ]
+  }
+}
+HTTP/1.1 200 OK
+Content-Length: 138
+Content-Type: application/json
+{"sessionId":"A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062","status":0,"value":{"app":"C:/Windows/System32/notepad.exe","platformName":"Windows"}}
+==========================================
+POST /wd/hub/session/A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062/timeouts HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "type": "implicit",
+  "ms": 10000
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062","status":0}
+==========================================
+POST /wd/hub/session/A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062/window/current/maximize HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 54
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "windowHandle": "current",
+  "handle": "current"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062","status":0}
+==========================================
+POST /wd/hub/session/A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Help"
+}
+HTTP/1.1 200 OK
+Content-Length: 129
+Content-Type: application/json
+{"sessionId":"A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062","status":0,"value":{"ELEMENT":"42.31590822.3.-2147483646.20500.361761427.5"}}
+==========================================
+POST /wd/hub/session/A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062/element/42.31590822.3.-2147483646.20500.361761427.5/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 57
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.31590822.3.-2147483646.20500.361761427.5"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062","status":0}
+==========================================
+POST /wd/hub/session/A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 49
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "About Notepad"
+}
+HTTP/1.1 200 OK
+Content-Length: 127
+Content-Type: application/json
+{"sessionId":"A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062","status":0,"value":{"ELEMENT":"42.21172660.4.-2147483646.20500.6293514.4"}}
+==========================================
+POST /wd/hub/session/A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062/element/42.21172660.4.-2147483646.20500.6293514.4/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 55
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.21172660.4.-2147483646.20500.6293514.4"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062","status":0}
+==========================================
+POST /wd/hub/session/A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 53
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Microsoft Windows"
+}
+HTTP/1.1 200 OK
+Content-Length: 97
+Content-Type: application/json
+{"sessionId":"A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062","status":0,"value":{"ELEMENT":"42.31198450"}}
+==========================================
+GET /wd/hub/session/A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062/element/42.31198450/text HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 91
+Content-Type: application/json
+{"sessionId":"A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062","status":0,"value":"Microsoft Windows"}
+==========================================
+POST /wd/hub/session/A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 38
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "OK"
+}
+HTTP/1.1 200 OK
+Content-Length: 96
+Content-Type: application/json
+{"sessionId":"A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062","status":0,"value":{"ELEMENT":"42.2491456"}}
+==========================================
+POST /wd/hub/session/A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062/element/42.2491456/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 24
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.2491456"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062","status":0}
+==========================================
+POST /wd/hub/session/A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 47
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Text Editor"
+}
+HTTP/1.1 200 OK
+Content-Length: 97
+Content-Type: application/json
+{"sessionId":"A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062","status":0,"value":{"ELEMENT":"42.28840088"}}
+==========================================
+GET /wd/hub/session/A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062/element/42.28840088/attribute/Name HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 85
+Content-Type: application/json
+{"sessionId":"A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062","status":0,"value":"Text Editor"}
+==========================================
+DELETE /wd/hub/session/A5D0FFD4-ACB6-4CB7-92BA-B76E6596F062 HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 0
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 12
+Content-Type: application/json
+{"status":0}
+==========================================
+POST /wd/hub/session HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 369
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+X-Idempotency-Key: a917e7ee-8b11-4937-b348-3c20324427b0
+{
+  "desiredCapabilities": {
+    "app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+    "platformName": "Windows",
+    "deviceName": "WindowsPC"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "appium:app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+        "appium:deviceName": "WindowsPC",
+        "platformName": "windows"
+      }
+    ]
+  }
+}
+HTTP/1.1 200 OK
+Content-Length: 152
+Content-Type: application/json
+{"sessionId":"939C02CC-7590-454B-BC66-80CB10A80522","status":0,"value":{"app":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App","platformName":"Windows"}}
+==========================================
+POST /wd/hub/session/939C02CC-7590-454B-BC66-80CB10A80522/timeouts HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "type": "implicit",
+  "ms": 10000
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"939C02CC-7590-454B-BC66-80CB10A80522","status":0}
+==========================================
+POST /wd/hub/session/939C02CC-7590-454B-BC66-80CB10A80522/window/current/maximize HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 54
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "windowHandle": "current",
+  "handle": "current"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"939C02CC-7590-454B-BC66-80CB10A80522","status":0}
+==========================================
+POST /wd/hub/session/939C02CC-7590-454B-BC66-80CB10A80522/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 60
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Standard Calculator mode"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"939C02CC-7590-454B-BC66-80CB10A80522","status":0,"value":{"ELEMENT":"42.22349856.4.4"}}
+==========================================
+GET /wd/hub/session/939C02CC-7590-454B-BC66-80CB10A80522/element/42.22349856.4.4/attribute/Name HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 98
+Content-Type: application/json
+{"sessionId":"939C02CC-7590-454B-BC66-80CB10A80522","status":0,"value":"Standard Calculator mode"}
+==========================================
+POST /wd/hub/session/939C02CC-7590-454B-BC66-80CB10A80522/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"939C02CC-7590-454B-BC66-80CB10A80522","status":0,"value":{"ELEMENT":"42.22349856.4.65"}}
+==========================================
+POST /wd/hub/session/939C02CC-7590-454B-BC66-80CB10A80522/element/42.22349856.4.65/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22349856.4.65"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"939C02CC-7590-454B-BC66-80CB10A80522","status":0}
+==========================================
+POST /wd/hub/session/939C02CC-7590-454B-BC66-80CB10A80522/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Plus"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"939C02CC-7590-454B-BC66-80CB10A80522","status":0,"value":{"ELEMENT":"42.22349856.4.54"}}
+==========================================
+POST /wd/hub/session/939C02CC-7590-454B-BC66-80CB10A80522/element/42.22349856.4.54/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22349856.4.54"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"939C02CC-7590-454B-BC66-80CB10A80522","status":0}
+==========================================
+POST /wd/hub/session/939C02CC-7590-454B-BC66-80CB10A80522/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Three"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"939C02CC-7590-454B-BC66-80CB10A80522","status":0,"value":{"ELEMENT":"42.22349856.4.63"}}
+==========================================
+POST /wd/hub/session/939C02CC-7590-454B-BC66-80CB10A80522/element/42.22349856.4.63/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22349856.4.63"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"939C02CC-7590-454B-BC66-80CB10A80522","status":0}
+==========================================
+POST /wd/hub/session/939C02CC-7590-454B-BC66-80CB10A80522/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 42
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Equals"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"939C02CC-7590-454B-BC66-80CB10A80522","status":0,"value":{"ELEMENT":"42.22349856.4.56"}}
+==========================================
+POST /wd/hub/session/939C02CC-7590-454B-BC66-80CB10A80522/element/42.22349856.4.56/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22349856.4.56"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"939C02CC-7590-454B-BC66-80CB10A80522","status":0}
+==========================================
+POST /wd/hub/session/939C02CC-7590-454B-BC66-80CB10A80522/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 85
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "xpath",
+  "value": "\u002f\u002f*[starts-with(@Name, 'Display is ')]"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"939C02CC-7590-454B-BC66-80CB10A80522","status":0,"value":{"ELEMENT":"42.22349856.4.9"}}
+==========================================
+GET /wd/hub/session/939C02CC-7590-454B-BC66-80CB10A80522/element/42.22349856.4.9/text HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 86
+Content-Type: application/json
+{"sessionId":"939C02CC-7590-454B-BC66-80CB10A80522","status":0,"value":"Display is 7"}
+==========================================
+DELETE /wd/hub/session/939C02CC-7590-454B-BC66-80CB10A80522 HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 0
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 12
+Content-Type: application/json
+{"status":0}
+==========================================
+POST /wd/hub/session HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 369
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+X-Idempotency-Key: 7cf3c352-956b-4105-8fce-97f2ba3ac0a5
+{
+  "desiredCapabilities": {
+    "app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+    "platformName": "Windows",
+    "deviceName": "WindowsPC"
+  },
+  "capabilities": {
+    "firstMatch": [
+      {
+        "appium:app": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+        "appium:deviceName": "WindowsPC",
+        "platformName": "windows"
+      }
+    ]
+  }
+}
+HTTP/1.1 200 OK
+Content-Length: 152
+Content-Type: application/json
+{"sessionId":"31D47811-D630-4DFE-804E-640913707758","status":0,"value":{"app":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App","platformName":"Windows"}}
+==========================================
+POST /wd/hub/session/31D47811-D630-4DFE-804E-640913707758/timeouts HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 39
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "type": "implicit",
+  "ms": 10000
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"31D47811-D630-4DFE-804E-640913707758","status":0}
+==========================================
+POST /wd/hub/session/31D47811-D630-4DFE-804E-640913707758/window/current/maximize HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 54
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "windowHandle": "current",
+  "handle": "current"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"31D47811-D630-4DFE-804E-640913707758","status":0}
+==========================================
+POST /wd/hub/session/31D47811-D630-4DFE-804E-640913707758/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 60
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Standard Calculator mode"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"31D47811-D630-4DFE-804E-640913707758","status":0,"value":{"ELEMENT":"42.22153746.4.4"}}
+==========================================
+GET /wd/hub/session/31D47811-D630-4DFE-804E-640913707758/element/42.22153746.4.4/attribute/Name HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 98
+Content-Type: application/json
+{"sessionId":"31D47811-D630-4DFE-804E-640913707758","status":0,"value":"Standard Calculator mode"}
+==========================================
+POST /wd/hub/session/31D47811-D630-4DFE-804E-640913707758/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Four"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"31D47811-D630-4DFE-804E-640913707758","status":0,"value":{"ELEMENT":"42.22153746.4.65"}}
+==========================================
+POST /wd/hub/session/31D47811-D630-4DFE-804E-640913707758/element/42.22153746.4.65/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22153746.4.65"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"31D47811-D630-4DFE-804E-640913707758","status":0}
+==========================================
+POST /wd/hub/session/31D47811-D630-4DFE-804E-640913707758/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 40
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Plus"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"31D47811-D630-4DFE-804E-640913707758","status":0,"value":{"ELEMENT":"42.22153746.4.54"}}
+==========================================
+POST /wd/hub/session/31D47811-D630-4DFE-804E-640913707758/element/42.22153746.4.54/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22153746.4.54"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"31D47811-D630-4DFE-804E-640913707758","status":0}
+==========================================
+POST /wd/hub/session/31D47811-D630-4DFE-804E-640913707758/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Three"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"31D47811-D630-4DFE-804E-640913707758","status":0,"value":{"ELEMENT":"42.22153746.4.63"}}
+==========================================
+POST /wd/hub/session/31D47811-D630-4DFE-804E-640913707758/element/42.22153746.4.63/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22153746.4.63"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"31D47811-D630-4DFE-804E-640913707758","status":0}
+==========================================
+POST /wd/hub/session/31D47811-D630-4DFE-804E-640913707758/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 42
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "name",
+  "value": "Equals"
+}
+HTTP/1.1 200 OK
+Content-Length: 102
+Content-Type: application/json
+{"sessionId":"31D47811-D630-4DFE-804E-640913707758","status":0,"value":{"ELEMENT":"42.22153746.4.56"}}
+==========================================
+POST /wd/hub/session/31D47811-D630-4DFE-804E-640913707758/element/42.22153746.4.56/click HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 30
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "id": "42.22153746.4.56"
+}
+HTTP/1.1 200 OK
+Content-Length: 63
+Content-Type: application/json
+{"sessionId":"31D47811-D630-4DFE-804E-640913707758","status":0}
+==========================================
+POST /wd/hub/session/31D47811-D630-4DFE-804E-640913707758/element HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 85
+Content-Type: application/json; charset=utf-8
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+{
+  "using": "xpath",
+  "value": "\u002f\u002f*[starts-with(@Name, 'Display is ')]"
+}
+HTTP/1.1 200 OK
+Content-Length: 101
+Content-Type: application/json
+{"sessionId":"31D47811-D630-4DFE-804E-640913707758","status":0,"value":{"ELEMENT":"42.22153746.4.9"}}
+==========================================
+GET /wd/hub/session/31D47811-D630-4DFE-804E-640913707758/element/42.22153746.4.9/text HTTP/1.1
+Accept-Encoding: gzip
+Cache-Control: no-cache
+Connection: Keep-Alive
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 86
+Content-Type: application/json
+{"sessionId":"31D47811-D630-4DFE-804E-640913707758","status":0,"value":"Display is 7"}
+==========================================
+DELETE /wd/hub/session/31D47811-D630-4DFE-804E-640913707758 HTTP/1.1
+Accept-Encoding: gzip
+Connection: Keep-Alive
+Content-Length: 0
+Host: 127.0.0.1:4723
+User-Agent: selenium/3.141.59 (java windows)
+HTTP/1.1 200 OK
+Content-Length: 12
+Content-Type: application/json
+{"status":0}

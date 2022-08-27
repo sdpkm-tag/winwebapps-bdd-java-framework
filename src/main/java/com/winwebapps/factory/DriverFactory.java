@@ -2,6 +2,7 @@ package com.winwebapps.factory;
 
 import com.winwebapps.utils.ConfigFileReader;
 import com.winwebapps.utils.FileCleanser;
+import com.winwebapps.utils.Helper;
 import com.winwebapps.utils.LogUtil;
 import io.appium.java_client.windows.WindowsDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -91,9 +92,23 @@ public class DriverFactory {
     public void cleanWadLogFile() throws InterruptedException {
         Thread.sleep(Long.parseLong(prop.getProperty("wad_fileclean_preset_wait"))); // A a static wait to allow the file to be freely accessed for manipulation and it can be configured to be read from config.properties file
         FileCleanser fileCleanser = new FileCleanser();
-        fileCleanser.removeUnwantedChars(prop.getProperty("wad_logfile_path"), "\\x00", ""); // Removes NUL characters
-        fileCleanser.removeUnwantedChars(prop.getProperty("wad_logfile_path"), "(?m)^[ \t]*\r?\n", ""); // Removes extra lines and spaces
-        System.out.println("WindowsApplication Log file is available");
+        String wadLogFileAbsolutePath = prop.getProperty("wad_logfile_abs_path");
+        fileCleanser.removeUnwantedChars(wadLogFileAbsolutePath, "\\x00", ""); // Removes NUL characters
+        fileCleanser.removeUnwantedChars(wadLogFileAbsolutePath, "(?m)^[ \t]*\r?\n", ""); // Removes extra lines and spaces
+        Helper.renameFileOrFilePathWithDateTimeStamp(prop.getProperty("wad_logfile_abs_path"),"yyyyMMdd-HHmmss","",".log");
+
+//        File currentWadFile = new File(wadLogFileAbsolutePath);
+//        String getCurrentDate = Helper.getDateInSpecificFormat("yyyyMMdd-HHmmss");
+//        File updatedWadFile = new File(prop.getProperty("wad_logfile_dir") + "WinAppDriver-" + getCurrentDate + ".txt");
+//
+//        if (currentWadFile.exists()) {
+//            currentWadFile.renameTo(updatedWadFile);
+//            LogUtil.info("WinAppDriver Log file is available at: " + updatedWadFile);
+//
+//        } else {
+//            LogUtil.warn("No WinAppDriver log file found!");
+//
+//        }
     }
 
     public WebDriver startWebBrowserDriver(String browserName) {

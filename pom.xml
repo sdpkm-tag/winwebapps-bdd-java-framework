@@ -7,8 +7,8 @@
   <name>Windows and Web Appps Test Framework</name>
   <description>Test Automation Framework for Multiple Windows and Web Applications using WinAppDriver and Selenium</description>
   <organization>
-    <name />
-    <url />
+    <name></name>
+    <url></url>
   </organization>
   <developers>
     <developer>
@@ -17,7 +17,7 @@
       <url>https://github.com/dee-sdpkm</url>
     </developer>
   </developers>
-  <contributors />
+  <contributors></contributors>
   <scm>
     <connection>scm:git:git@github.com:dee-sdpkm/winwebapps-bdd-java-framework.git</connection>
     <developerConnection>scm:git:git@github.com:dee-sdpkm/winwebapps-bdd-java-framework.git</developerConnection>
@@ -43,12 +43,14 @@
     <maven-release-plugin.version>3.0.0-M6</maven-release-plugin.version>
     <maven-scm-provider-gitexe.version>2.0.0-M2</maven-scm-provider-gitexe.version>
     <maven-surefire-plugin.version>3.0.0-M7</maven-surefire-plugin.version>
+    <maven.build.timestamp.format>yyyy-MM-dd_HHmmss</maven.build.timestamp.format>
     <monte-screen-recorder.version>0.7.7.0</monte-screen-recorder.version>
     <project.build.sourceEncoding>${maven-compiler-plugin.encoding}</project.build.sourceEncoding>
     <project.reporting.outputEncoding>${maven-compiler-plugin.encoding}</project.reporting.outputEncoding>
     <selenium-java.version>3.141.59</selenium-java.version>
     <sortpom-maven-plugin.version>3.1.3</sortpom-maven-plugin.version>
-    <webdrivermanager.version>5.2.3</webdrivermanager.version>
+    <timestamp>${maven.build.timestamp}</timestamp>
+    <webdrivermanager.version>5.3.0</webdrivermanager.version>
   </properties>
   <dependencies>
     <dependency>
@@ -146,12 +148,23 @@
       <version>${extentreports-cucumber7-adapter.version}</version>
       <scope>test</scope>
     </dependency>
+    <!--    <dependency>-->
+    <!--      <groupId>tech.grasshopper</groupId>-->
+    <!--      <artifactId>extentreports-cucumber6-adapter</artifactId>-->
+    <!--      <version>2.13.0</version>-->
+    <!--      <scope>test</scope>-->
+    <!--    </dependency>-->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
+    <!--    <dependency>-->
+    <!--      <groupId>com.github.mkolisnyk</groupId>-->
+    <!--      <artifactId>cucumber-runner</artifactId>-->
+    <!--      <version>1.3.5</version>-->
+    <!--    </dependency>-->
   </dependencies>
   <build>
     <plugins>
@@ -174,7 +187,7 @@
         <configuration>
           <sourceJsonReportDirectory>${project.build.directory}/cucumber-report</sourceJsonReportDirectory>
           <!--          <generatedHtmlReportDirectory>${project.build.directory}/test-output/cluecumber-report</generatedHtmlReportDirectory>-->
-          <generatedHtmlReportDirectory>test-output/cluecumber-report</generatedHtmlReportDirectory>
+          <generatedHtmlReportDirectory>test-output/cluecumber-report/${maven.build.timestamp}-cluecumber-report</generatedHtmlReportDirectory>
           <expandAttachments>true</expandAttachments>
           <customPageTitle>Functional Test Report for Windows and Web Apps</customPageTitle>
           <expandBeforeAfterHooks>true</expandBeforeAfterHooks>
@@ -184,7 +197,7 @@
             <Custom_Parameter>This is a test</Custom_Parameter>
             <Custom_URL>http://www.google.com</Custom_URL>
             <_Text>This is a long text that is displayed without the key. This can be used to display longer
-                            texts in the report!</_Text>
+                                  texts in the report!</_Text>
           </customParameters>
         </configuration>
         <executions>
@@ -194,6 +207,77 @@
               <goal>reporting</goal>
             </goals>
             <phase>post-integration-test</phase>
+          </execution>
+        </executions>
+      </plugin>
+      <!--      <plugin>-->
+      <!--        <groupId>tech.grasshopper</groupId>-->
+      <!--        <artifactId>cucumber-pdf-plugin</artifactId>-->
+      <!--        <version>1.11.0</version>-->
+      <!--        <executions>-->
+      <!--          <execution>-->
+      <!--            <id>FunctionalTestReport</id>-->
+      <!--            <phase>post-integration-test</phase>-->
+      <!--            <goals>-->
+      <!--              <goal>pdfreport</goal>-->
+      <!--            </goals>-->
+      <!--          </execution>-->
+      <!--        </executions>-->
+      <!--        <configuration>-->
+      <!--          <cucumberJsonReportDirectory>${project.build.directory}/cucumber-report</cucumberJsonReportDirectory>-->
+      <!--          <cucumberPdfReportDirectory>test-output/pdfreport</cucumberPdfReportDirectory>-->
+      <!--          <cucumberPdfReportDirectoryTimeStamp>yyyyMMdd-HHmmss</cucumberPdfReportDirectoryTimeStamp>-->
+      <!--          <displayAttached>false</displayAttached>-->
+      <!--          <displayDetailed>true</displayDetailed>-->
+      <!--          <displayFeature>true</displayFeature>-->
+      <!--          <displayScenario>true</displayScenario>-->
+      <!--          <displayExpanded>true</displayExpanded>-->
+      <!--        </configuration>-->
+      <!--      </plugin>-->
+      <plugin>
+        <groupId>net.masterthought</groupId>
+        <artifactId>maven-cucumber-reporting</artifactId>
+        <version>5.7.1</version>
+        <executions>
+          <execution>
+            <id>execution</id>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+            <phase>verify</phase>
+            <configuration>
+              <projectName>WinWebApps BDD Functional Testing</projectName>
+              <!-- optional, per documentation set this to "true" to bypass generation of Cucumber Reports entirely, defaults to false if not specified -->
+              <skip>false</skip>
+              <!-- output directory for the generated report -->
+              <outputDirectory>test-output/cucumber-jvm-report/${timestamp}-cucumber-jvm-report</outputDirectory>
+              <!-- optional, defaults to outputDirectory if not specified -->
+              <inputDirectory>${project.build.directory}</inputDirectory>
+              <jsonFiles>
+                <!--                                <jsonFile>**/cucumber.json</jsonFile>-->
+                <!-- supports wildcard or name pattern -->
+                <param>**/*.json</param>
+              </jsonFiles>
+              <!-- optional, defaults to outputDirectory if not specified -->
+              <!--                            <classificationDirectory>${project.build.directory}/classifications-->
+              <!--                            </classificationDirectory>-->
+              <!--                            <classificationFiles>-->
+              <!--                                &lt;!&ndash; supports wildcard or name pattern &ndash;&gt;-->
+              <!--                                <param>sample.properties</param>-->
+              <!--                                <param>other.properties</param>-->
+              <!--                            </classificationFiles>-->
+              <!--                            <parallelTesting>false</parallelTesting>-->
+              <!-- optional, set true to group features by its Ids -->
+              <mergeFeaturesById>false</mergeFeaturesById>
+              <!-- optional, set true to get a final report with latest results of the same test from different test runs -->
+              <mergeFeaturesWithRetest>true</mergeFeaturesWithRetest>
+              <!-- optional, set true to fail build on test failures -->
+              <checkBuildResult>false</checkBuildResult>
+              <skipEmptyJSONFiles>true</skipEmptyJSONFiles>
+              <buildNumber>${project.version}</buildNumber>
+              <!--                            <trendsFile>${project.build.directory}/test-classes/trends.json</trendsFile>-->
+              <!--                            <trendsLimit></trendsLimit>-->
+            </configuration>
           </execution>
         </executions>
       </plugin>
@@ -243,9 +327,11 @@
         <version>${maven-surefire-plugin.version}</version>
         <configuration>
           <includes>
-            <include>**/*TestSuiteRunner*.java</include>
+            <include>**/TestSuiteRunner.java</include>
+            <include>**/FailedTestsRunner.java</include>
           </includes>
           <testFailureIgnore>true</testFailureIgnore>
+          <rerunFailingTestsCount>0</rerunFailingTestsCount>
         </configuration>
       </plugin>
     </plugins>

@@ -2,6 +2,7 @@ package com.winwebapps.apphooks;
 
 import com.winwebapps.factory.DriverFactory;
 import com.winwebapps.utils.ConfigFileReader;
+import com.winwebapps.utils.Helper;
 import com.winwebapps.utils.ScreenRecorderUtil;
 import io.appium.java_client.windows.WindowsDriver;
 import io.cucumber.java.*;
@@ -125,7 +126,22 @@ public class ApplicationHooks {
 //        ScreenRecorderUtil.stopRecording();
         driverFactory.closeWinAppDriver();
         driverFactory.cleanWadLogFile();
+
+//        String cucumberReportOutputPath = prop.getProperty("test_report_path_cluecumber");
+//        String extentReportOutputPath = prop.getProperty("test_report_path_extent");
+//        String timeStampFormat = prop.getProperty("test_report_timestamp_format");
+//        Helper.renameFileOrFilePathWithDateTimeStamp(cucumberReportOutputPath,timeStampFormat,"","");
+//        Helper.renameFileOrFilePathWithDateTimeStamp(extentReportOutputPath, timeStampFormat,"","");
     }
+
+//    @AfterAll(order = 0)
+//    public void extractTestReports() {
+//        String cucumberReportOutputPath = prop.getProperty("test_report_path_cluecumber");
+//        String extentReportOutputPath = prop.getProperty("test_report_path_extent");
+//        String timeStampFormat = prop.getProperty("test_report_timestamp_format");
+//        Helper.renameFileOrFilePathWithDateTimestamp(cucumberReportOutputPath, timeStampFormat);
+//        Helper.renameFileOrFilePathWithDateTimestamp(extentReportOutputPath, timeStampFormat);
+//    }
 
     // Generic WinApp Start method (Currently not recommended to be used via hooks). TODO Check if generic method cab ve be moved to DriverFactory or removed altogether.
     public static void startWindowsApp(String app_id_or_exe_path, Scenario scenario) {
