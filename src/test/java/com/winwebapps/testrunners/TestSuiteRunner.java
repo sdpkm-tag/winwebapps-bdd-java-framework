@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/features",
-        tags = "@WebApp or @WinApp",
+        tags = "@WinApp or @WebApp",
         dryRun = false,
         plugin = {"pretty",
                 "summary",
@@ -20,13 +20,4 @@ import org.junit.runner.RunWith;
         monochrome = true
 )
 public class TestSuiteRunner {
-//    @AfterClass
-//    public static void extractTestReports() {
-//        String cucumberReportOutputPath = properties.getProperty("test_report_path_cluecumber");
-//        String extentReportOutputPath = properties.getProperty("test_report_path_extent");
-//        String timeStampFormat = properties.getProperty("test_report_timestamp_format");
-//        Helper.renameFileOrFilePathWithDateTimeStamp(cucumberReportOutputPath, timeStampFormat, "", "");
-////        Helper.renameFileOrFilePathWithDateTimeStamp(extentReportOutputPath, timeStampFormat, "", "");
-//    }
 }
-

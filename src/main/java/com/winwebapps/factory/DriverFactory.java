@@ -95,20 +95,8 @@ public class DriverFactory {
         String wadLogFileAbsolutePath = prop.getProperty("wad_logfile_abs_path");
         fileCleanser.removeUnwantedChars(wadLogFileAbsolutePath, "\\x00", ""); // Removes NUL characters
         fileCleanser.removeUnwantedChars(wadLogFileAbsolutePath, "(?m)^[ \t]*\r?\n", ""); // Removes extra lines and spaces
-        Helper.renameFileOrFilePathWithDateTimeStamp(prop.getProperty("wad_logfile_abs_path"),"yyyyMMdd-HHmmss","",".log");
-
-//        File currentWadFile = new File(wadLogFileAbsolutePath);
-//        String getCurrentDate = Helper.getDateInSpecificFormat("yyyyMMdd-HHmmss");
-//        File updatedWadFile = new File(prop.getProperty("wad_logfile_dir") + "WinAppDriver-" + getCurrentDate + ".txt");
-//
-//        if (currentWadFile.exists()) {
-//            currentWadFile.renameTo(updatedWadFile);
-//            LogUtil.info("WinAppDriver Log file is available at: " + updatedWadFile);
-//
-//        } else {
-//            LogUtil.warn("No WinAppDriver log file found!");
-//
-//        }
+        Helper.renameFileOrFilePathWithDateTimeStamp(prop.getProperty("wad_logfile_abs_path"), "yyyyMMdd-HHmmss", "", ".log");
+        LogUtil.info("WinAppDriver Log file is available!");
     }
 
     public WebDriver startWebBrowserDriver(String browserName) {

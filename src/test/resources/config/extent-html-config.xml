@@ -15,7 +15,7 @@
         <!-- report name - displayed at top-nav -->
         <reportName>Win and Web Apps Functional Test</reportName>
         <!-- view report without internet -->
-        <offlineMode>false</offlineMode>
+        <offlineMode>true</offlineMode>
         <!-- settings to change component location -->
         <testViewChartLocation>top</testViewChartLocation>
         <chartVisibleOnOpen>true</chartVisibleOnOpen>

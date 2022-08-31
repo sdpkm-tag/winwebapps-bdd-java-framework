@@ -20,7 +20,7 @@
         <!-- location of charts in the test view -->
         <!-- top, bottom -->
         <testViewChartLocation>bottom</testViewChartLocation>
-        <offlineMode>false</offlineMode>
+        <offlineMode>true</offlineMode>
         <thumbnailForBase64>true</thumbnailForBase64>
         <!-- custom javascript -->
         <scripts>
