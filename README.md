@@ -91,6 +91,7 @@ Following example will run only `@regression` tests from `@Calculcator` feature 
 - Ensure the exe file path for `WindowsApplicationDriver` is correct in `WinAppDriver.bat` file located in `src/test/resources/drivers/`. To set-up and install Windows Application driver refer to latest [official microsoft releases](https://github.com/Microsoft/WinAppDriver/releases) and install using instructions provided [here](https://github.com/microsoft/WinAppDriver#install--run-winappdriver).
 - Ensure that directory exists `test-output/screen-recordings` in the root for screen-recording fies to save
 - Configure (config.properties), all file paths and web browser driver exe paths
+- Ensure that screen resolution of host machine (from where remote machines are accessed) are set to have standard resolution based on screen size and set to 100% scale for optimum performance and screen-recording. Recommended resolution is 1920x1080. 
 
 
 ### Guidelines:

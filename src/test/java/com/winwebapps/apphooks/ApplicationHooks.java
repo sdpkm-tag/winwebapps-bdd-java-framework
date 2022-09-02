@@ -71,7 +71,8 @@ public class ApplicationHooks {
         LogUtil.info("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----- Notepad Application has launched! ----->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
     }
 
-    @After(value = "@WebApp or @WinApp", order = 2)
+//    @After(value = "@WebApp or @WinApp", order = 2)
+    @AfterStep(value = "@WebApp or @WinApp")
     public void screenshotOnFailure(Scenario scenario) {
         if (scenario.isFailed()) {
             // take screenshot (TODO Can be customised to take screenshots at all steps - Use of @AfterStep hook recommended)
@@ -125,7 +126,7 @@ public class ApplicationHooks {
         }
 //        ScreenRecorderUtil.stopRecording();
         driverFactory.closeWinAppDriver();
-        driverFactory.cleanWadLogFile();
+//        driverFactory.cleanWadLogFile(); // Disabled since might take longer time to complete the build and report generation for larger chunk of tests
 
 //        String cucumberReportOutputPath = prop.getProperty("test_report_path_cluecumber");
 //        String extentReportOutputPath = prop.getProperty("test_report_path_extent");
