@@ -38,6 +38,11 @@ Calculator Microsoft.WindowsCalculator_8wekyb3d8bbwe!App
 10. Distributed Runs (Future Development)- can be extended to set-up to run with node/server structure (Using of selenium grid, WD hub etc)
 11. Has logging capability using Apache Log4j2 api
 
+### Framework Technical Architecture:
+- Following is a high level architecture of the BDD based test framework for Windows and Web Applications.
+
+![image](https://user-images.githubusercontent.com/29902309/193563104-49b558ad-3e83-472e-9934-0eada5893d78.png)
+
 
 ### Running Cucumber Tests using Maven Surefire plugin
 
