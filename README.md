@@ -27,16 +27,22 @@ Calculator Microsoft.WindowsCalculator_8wekyb3d8bbwe!App
 
 ### Framework elements:
 1. Takes screenshot on failure and attaches to the configured reports
-2. Screen Recording (Feature to record the test run and save that in avi format. Caution! Keep cleaning the directory for better disk space)
+2. Configurable Screen Recording (Feature to record the test run and save that in avi format. Caution! Keep cleaning the directory for better disk space)
 3. Excel utility - Data driven (Testing run time data can be read from and written to excel - The excel file must exist as a pre-req)
 4. Cache data / runtime read write into a text file (small runtime test data utility - recommended to use if data passing required within the same test scenario)
-5. Supports testing of multiple win apps and web apps (Single framework to have package of all WinApps and associated WebApps - organised via packaging structure as shown for sample apps)
-6. Test Reporting (Currently has cucumber basic html, cluecumber report, cucumber jvm report, extent-spark, extent-html and pdf reports enabled)
-7. Launches Web browser (Can lauch different web browsers using `DriverFactory.java`) and made configurable.
-8. Add dynamic waiting (Explicit, implict and local) - (Can be hardcoded to start for debug with but later to be configured to be read from config file using explicit or fluent waits). Also allows to use custom waits (explicit and fluent) from `ActionFactory.java` based on requirements. 
-9. Can support parallel runs (Future Development) - Using Threadlocal for any parallel test needs (Has capability to extend the framework for parallel runs using multi-threading)
-10. Distributed Runs (Future Development)- can be extended to set-up to run with node/server structure (Using of selenium grid, WD hub etc)
-11. Has logging capability using Apache Log4j2 api
+5. Supports testing of multiple Windows apps (UWP, WinForms, WPF and classic Win32 apps) and Web apps (Single framework to have package of all WinApps and associated WebApps - organised via packaging structure as shown for sample apps)
+6. Has potential to be extended to: 
+  - Cloud based cross-platform and cross-browser testing (e.g. BrowserStack, Sauce Labs etc)
+  - Testing of APIs (REST / SOAP) using industry standard open-source frameworks (e.g. REST Assured, Karate DSL etc)
+7. Has capability to be extended to DevOps model of CI/CD Pipeline
+8. Test Reporting (Currently has cucumber basic html, cluecumber report, cucumber jvm report, extent-spark, extent-html and pdf reports enabled)
+9. Launches Web browser (Can lauch different web browsers using `DriverFactory.java`) and made configurable.
+10. Add dynamic waiting (Explicit, implict, Fluent and local static waits) - (Can be hardcoded to start for debug with but later to be configured to be read from config file using explicit or fluent waits). Also allows to use custom waits (explicit and fluent) from `ActionFactory.java` based on requirements. 
+11. Can support parallel runs (Future Development) - Using Threadlocal for any parallel test needs (Has capability to extend the framework for parallel runs using multi-threading)
+12. BDD Style scripting - Common Business Language driving tests
+13. Follows Industry standard Page Object Model based design pattern and hybrid framework structure
+14. Distributed Runs (Future Development)- can be extended to set-up to run with node/server structure (Using of selenium grid, WD hub etc)
+15. Has logging capability using Apache Log4j2 api
 
 ### Framework Technical Architecture:
 - Following is a high level architecture of the BDD based test framework for Windows and Web Applications.
